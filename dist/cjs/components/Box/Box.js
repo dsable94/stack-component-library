@@ -39,11 +39,13 @@ var Box = function Box(props) {
       bgColor = props.bgColor,
       opacity = props.opacity,
       width = props.width,
-      textAlign = props.textAlign;
+      textAlign = props.textAlign,
+      onClick = props.onClick;
   return /*#__PURE__*/_react.default.createElement(_Box.StyledBox, _extends({
     justifyItems: justifyItems,
     justifyContent: justifyContent,
-    alignItems: alignItems
+    alignItems: alignItems,
+    onClick: onClick
   }, props), children);
 };
 
