@@ -32,3 +32,4 @@ export { Menu } from './components/Menu';
 export { SearchBox } from './components/SearchBox';
 export { SocialMediaGroup } from './components/SocialMediaGroup';
 export { StackModal } from './components/StackModal';
+export { ToolTip } from './components/ToolTip';
