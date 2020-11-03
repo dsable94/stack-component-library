@@ -219,6 +219,12 @@ Object.defineProperty(exports, "StackModal", {
     return _StackModal.StackModal;
   }
 });
+Object.defineProperty(exports, "ToolTip", {
+  enumerable: true,
+  get: function get() {
+    return _ToolTip.ToolTip;
+  }
+});
 
 var _Avatar = require("./components/Avatar");
 
@@ -285,3 +291,5 @@ var _SearchBox = require("./components/SearchBox");
 var _SocialMediaGroup = require("./components/SocialMediaGroup");
 
 var _StackModal = require("./components/StackModal");
+
+var _ToolTip = require("./components/ToolTip");

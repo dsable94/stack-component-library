@@ -35,6 +35,7 @@ BoxTypes.propTypes={
     width: PropTypes.string,
     textAlign: PropTypes.string,
     bgImg: PropTypes.string,
+    onClick: PropTypes.func,
 
 };
 

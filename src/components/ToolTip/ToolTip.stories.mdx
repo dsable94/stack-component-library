@@ -1,0 +1,57 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import ToolTip from "./ToolTip";
+import ToolTipTypes from "./ToolTip.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/ToolTip" component="ToolTip" />
+
+<Story name="Import" />
+
+# ToolTip
+
+## Import
+
+```jsx
+import {ToolTip} from "@stack-ui/components";
+```
+## Example
+
+<Preview withToolbar>
+        <Story name="ToolTip-Top">
+         <ToolTip placement="top" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Hover on me" />
+    </Story>
+            <Story name="ToolTip-Left">
+         <ToolTip placement="left" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Hover on me" />
+    </Story>
+                <Story name="ToolTip-center">
+         <ToolTip placement="right" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Hover on me" />
+    </Story>
+</Preview>
+
+## ToolTip on Click
+
+<Preview withToolbar>
+    <Story name="ToolTip-Click">
+         <ToolTip triggerType="click" placement="top" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Hover on me" />
+    </Story>
+    <Story name="ToolTip-Click-WithRightPosition">
+          <ToolTip triggerType="click" placement="right" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Hover on me" />
+    </Story>
+</Preview>
+
+## ToolTip on Hover With Custom Background color & Text Color
+
+<Preview withToolbar>
+    <Story name="ToolTip-Custom">
+        <ToolTip textColor="grey" bgColor="black" borderColor="yellow" hoverBgColor="yellow" hoverTextColor="black" hoverBorderColor="red" placement="top" toolTipContent="Hi I am toolTipContent" toolTipBaseContent="Custom" />
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ToolTipTypes} />
+
+

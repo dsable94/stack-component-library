@@ -1,6 +1,9 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
 import SocialMediaGroup from './SocialMediaGroup';
 import SocialMediaTypes from './SocialMediaGroup.types';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import {Box} from '../Box';
  
 
 <Meta title="Components/SocialMediaGroup" component="SocialMediaGroup" />
@@ -19,7 +22,41 @@ import {SocialMediaGroup} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Usage">
         <>
-            <SocialMediaGroup />
+        <Row>
+            <Col xl="4">
+                <Box display='flex' justifyContent='space-evenly' >
+                <SocialMediaGroup iconType="faceBook" url="https://www.facebook.com/"  isRound color="#2196f3" size="22px" />
+                <SocialMediaGroup iconType="faceBook" url="https://www.facebook.com/" color="#2196f3" size="22px" />
+                <SocialMediaGroup iconType="faceBook" url="https://www.facebook.com/"  isRound bgColor="#2196f3" size="22px" />
+                </Box>
+            </Col>
+            <Col xl="4">
+             <Box display='flex' justifyContent='space-evenly' >
+            <SocialMediaGroup iconType="twitter" url="https://twitter.com/login?lang=en" isRound color="#55ACEE" size="22px" />
+            <SocialMediaGroup iconType="twitter" url="https://www.facebook.com/" color="#55ACEE" size="22px" />
+            <SocialMediaGroup iconType="whatsApp" url="https://www.whatsapp.com/?lang=en" isRound color="#69b73a" size="22px" />
+            <SocialMediaGroup iconType="share" url="" isRound color="#673AB7" size="22px" />
+            </Box>
+            </Col>
+             <Col xl="4">
+              <Box display='flex' justifyContent='space-evenly' >
+            <SocialMediaGroup iconType="linkedIn" url="https://www.facebook.com/"  color="#007bb5" size="22px" />
+            <SocialMediaGroup iconType="youTube" url="https://www.facebook.com/"  color="#2196f3" size="22px" />
+            <SocialMediaGroup iconType="instaGram" url="https://www.facebook.com/" isRound color="#2196f3" size="22px" />
+            <SocialMediaGroup iconType="gooGle" url="https://www.facebook.com/" isRound color="#dd4b39" size="22px" />
+            <SocialMediaGroup iconType="pInterest" url="https://www.facebook.com/"  size="22px" />
+             </Box>
+            </Col>
+            </Row>
+            <Row>
+            <Col xl="12">
+             <Box display='flex' justifyContent='space-evenly' >
+            <SocialMediaGroup faceBook url="https://www.facebook.com/"  color="#2196f3" size="22px" />
+            <SocialMediaGroup twitter url="https://www.facebook.com/" color="#55ACEE" size="22px" />
+            <SocialMediaGroup faceBook url="https://www.facebook.com/" bgColor="#3B5998" isRound size="22px" />
+            </Box>
+            </Col>
+            </Row>
         </>
     </Story>
 </Preview>
