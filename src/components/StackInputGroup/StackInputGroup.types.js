@@ -21,6 +21,7 @@ StackInputGroupTypes.propTypes={
     rows:PropTypes.string,
     isError: PropTypes.bool,
     hint: PropTypes.string,
+    onChange: PropTypes.func,
 };
 
 
