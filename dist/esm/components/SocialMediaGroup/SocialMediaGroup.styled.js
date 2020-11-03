@@ -16,7 +16,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 var StyledSocialMediaGroup = _styledComponents["default"].div.withConfig({
   displayName: "SocialMediaGroupstyled__StyledSocialMediaGroup",
   componentId: "sc-11vdqlf-0"
-})([""]);
+})(["", " ", " ", " ", ""], function (props) {
+  return props.color ? (0, _styledComponents.css)(["a{color:", ";}"], props.color) : (0, _styledComponents.css)(["a{color:#cecaca;}"]);
+}, function (props) {
+  return props.size ? (0, _styledComponents.css)(["a{font-size:", ";}"], props.size) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.isRound === true ? (0, _styledComponents.css)(["a{height:2rem;width:2rem;line-height:calc(2rem - 4px);display:flex;border:2px solid;border-radius:50%;align-items:center;justify-content:center;padding:8px;}"]) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.bgColor ? (0, _styledComponents.css)(["a{background:", ";color:white;}"], props.bgColor) : (0, _styledComponents.css)([""]);
+});
 
 var _default = StyledSocialMediaGroup;
 exports["default"] = _default;
