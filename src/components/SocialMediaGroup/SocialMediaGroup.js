@@ -5,14 +5,14 @@ import { FaFacebookF, FaTwitter, FaGoogle, FaInstagram,
 import StyledSocialMediaGroup from './SocialMediaGroup.styled';
 
 const SocialMediaGroup = (props) =>{
-    const { size, url, faceBook, twitter, gitHub, whatsApp, share,
-        linkedIn, youTube, instaGram, gooGle, pInterest, isRound, color, bgColor, iconType  } = props;
+    const { size, url, facebook, twitter, gitHub, whatsApp, share,
+        linkedIn, youTube, instaGram, google, pInterest, isRound, color, bgColor, iconType, onClick, onChange  } = props;
 
     return(
         <StyledSocialMediaGroup className="icon-bar" size={size} url={url} color={color}
-            isRound={isRound} bgColor={bgColor}
+            isRound={isRound} bgColor={bgColor} onClick={onClick} {...props}
         >
-            {iconType==='faceBook' && 
+            {iconType==='facebook' && 
                 <a href={url}> <FaFacebookF /> </a>
             } 
              {iconType==='twitter' && 
@@ -21,7 +21,7 @@ const SocialMediaGroup = (props) =>{
              {iconType==='gitHub' && 
                 <a href={url}> <FaGithub /> </a>
             }
-             {iconType==='gooGle' && 
+             {iconType==='google' && 
                 <a href={url}> <FaGoogle /> </a>
             }
              {iconType==='whatsApp' && 
