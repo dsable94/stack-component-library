@@ -2,12 +2,24 @@ import styled, {css} from "styled-components";
 
 const StyledSearchBox = styled.div`
 
+#Search{
+    outline:0;
+    }
+    
+    #Search::-webkit-search-cancel-button{
+        position:relative;
+        right:20px;  
+        cursor: pointer;  
+    }
+
 input {
     padding: 6px ;
     transition: all 0.5s ease;
 }
  position:relative;
  display:inline-block;
+
+
 
 ${props => props.border ? css `
 & input {

@@ -9,7 +9,9 @@ SocialMediaTypes.propTypes={
     color: PropTypes.string,
     isRound: PropTypes.bool,
     bgColor: PropTypes.string,
-    iconType: PropTypes.oneOf(['faceBook','twitter','gitHub','whatsApp','pInterest','gooGle','instaGram','share','linkedIn', 'youTube']),
+    iconType: PropTypes.oneOf(['facebook','twitter','gitHub','whatsApp','pInterest','google','instaGram','share','linkedIn', 'youTube']),
+    onClick: PropTypes.func,
+    onChange: PropTypes.func,
 };
 
 SocialMediaTypes.defaultProps = {

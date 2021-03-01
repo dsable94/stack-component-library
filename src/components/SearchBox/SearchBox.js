@@ -13,9 +13,9 @@ const SearchBox = (props) =>{
     top: '6px',
   } 
     return(
-        <StyledSearchBox className="abx" borderRadius={borderRadius} bg={bg} border={border} size={size}
-         onFocus={onFocus} onClick={onClick} isError={isError} disabled={disabled}>
-            <input type="text" placeholder={placeholder} id={id}
+        <StyledSearchBox className="search" borderRadius={borderRadius} bg={bg} border={border} size={size}
+         onFocus={onFocus} onClick={onClick} isError={isError} disabled={disabled} {...props}>
+            <input type="search" placeholder={placeholder} id="Search"
                 value={value} name={name} />
                <Icon style={{...iconStyle}} icon={icon} size={size}></Icon> 
                {isError && <p>{hint}</p> }
