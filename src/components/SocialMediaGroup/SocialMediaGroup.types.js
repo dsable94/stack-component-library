@@ -12,6 +12,7 @@ SocialMediaTypes.propTypes={
     iconType: PropTypes.oneOf(['facebook','twitter','gitHub','whatsApp','pInterest','google','instaGram','share','linkedIn', 'youTube']),
     onClick: PropTypes.func,
     onChange: PropTypes.func,
+
 };
 
 SocialMediaTypes.defaultProps = {

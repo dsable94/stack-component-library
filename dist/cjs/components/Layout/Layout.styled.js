@@ -31,7 +31,9 @@ exports.StyledRow = StyledRow;
 var StyledCol = (0, _styledComponents.default)(_Col.default).withConfig({
   displayName: "Layoutstyled__StyledCol",
   componentId: "sc-1c1ia9j-1"
-})(["&.temp{padding-top:.75rem;padding-bottom:.75rem;background-color:#bbeffd;border:1px solid #61dafb;}"]);
+})(["&.temp{padding-top:.75rem;padding-bottom:.75rem;background-color:#bbeffd;border:1px solid #61dafb;}", "    "], function (props) {
+  return props.bgColor ? (0, _styledComponents.css)([" background-color:", ";"], props.bgColor) : (0, _styledComponents.css)([""]);
+});
 exports.StyledCol = StyledCol;
 var StyledContainer = (0, _styledComponents.default)(_Container.default).withConfig({
   displayName: "Layoutstyled__StyledContainer",

@@ -87,10 +87,10 @@ Object.defineProperty(exports, "Table", {
     return _Table.Table;
   }
 });
-Object.defineProperty(exports, "Tabs", {
+Object.defineProperty(exports, "StackTabs", {
   enumerable: true,
   get: function get() {
-    return _Tabs.Tabs;
+    return _StackTabs.StackTabs;
   }
 });
 Object.defineProperty(exports, "Pagination", {
@@ -165,10 +165,10 @@ Object.defineProperty(exports, "Radio", {
     return _Radio.Radio;
   }
 });
-Object.defineProperty(exports, "Checkbox", {
+Object.defineProperty(exports, "CheckBox", {
   enumerable: true,
   get: function get() {
-    return _CheckboxGroup.Checkbox;
+    return _CheckboxGroup.CheckBox;
   }
 });
 Object.defineProperty(exports, "Accordian", {
@@ -254,7 +254,7 @@ var _StackChart = require("./components/StackChart");
 
 var _Table = require("./components/Table");
 
-var _Tabs = require("./components/Tabs");
+var _StackTabs = require("./components/StackTabs");
 
 var _Pagination = require("./components/Pagination");
 

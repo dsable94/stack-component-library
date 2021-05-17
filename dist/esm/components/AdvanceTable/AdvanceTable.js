@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _AdvanceTable = require("./AdvanceTable.styled");
 
-var _Pagination = _interopRequireDefault(require("../Pagination"));
+var _Pagination = require("../Pagination");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -29,7 +29,7 @@ var AdvanceTable = function AdvanceTable(props) {
     data: data,
     selectableRows: selectableRows,
     pagination: pagination,
-    paginationComponent: _Pagination["default"]
+    paginationComponent: _Pagination.Pagination
   }, props));
 };
 

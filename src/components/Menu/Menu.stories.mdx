@@ -20,15 +20,17 @@ import {Menu} from "@stack-ui/components";
 ## Variant
 
 The best part is you can do this with any button variant, too:
-
 <Preview withToolbar>
     <Story name="Usage">
          <>
           <span style={{marginRight:20, display: 'inline-block' }} >
         <Menu value= "Menu" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
             item:'Add text',
-            link :'/about',
             icon: 'add',
+            handler: function (){
+                // This function will be use to handle click on the item.
+                console.log('Do your work here');  
+              },
         },
         {
           item:'Delete text',

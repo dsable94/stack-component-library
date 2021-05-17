@@ -22,6 +22,8 @@ export const green= '#23b397';
 export const teal= '#02a8b5';
 export const cyan= '#56c2d6';
 export const white= '#fff';
+export const ColorWhiteBase= '#56c2d6';
+
 
 export const primary=blue;
 export const secondary=gray600;

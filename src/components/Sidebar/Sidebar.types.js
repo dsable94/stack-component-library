@@ -13,6 +13,7 @@ SidebarTypes.propTypes={
     backgroundColor:PropTypes.string,
     color: PropTypes.string,
     onClick: PropTypes.func,
+    className: PropTypes.string,
 };
 
 SidebarTypes.defaultProps = {

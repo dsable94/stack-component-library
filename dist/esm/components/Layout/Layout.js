@@ -19,7 +19,8 @@ var Container = function Container(props) {
   var as = props.as,
       fluid = props.fluid,
       bsPrefix = props.bsPrefix,
-      children = props.children;
+      children = props.children,
+      className = props.className;
   return /*#__PURE__*/_react["default"].createElement(_Layout.StyledContainer, _extends({
     as: as
   }, props), children);
@@ -36,7 +37,8 @@ var Row = function Row(props) {
       xl = props.xl,
       xs = props.xs,
       bsPrefix = props.bsPrefix,
-      children = props.children;
+      children = props.children,
+      className = props.className;
   return /*#__PURE__*/_react["default"].createElement(_Layout.StyledRow, _extends({
     as: as
   }, props), children);
@@ -53,7 +55,11 @@ var Col = function Col(props) {
       xl = props.xl,
       xs = props.xs,
       bsPrefix = props.bsPrefix,
-      children = props.children;
+      children = props.children,
+      p = props.p,
+      m = props.m,
+      bgColor = props.bgColor,
+      className = props.className;
   return /*#__PURE__*/_react["default"].createElement(_Layout.StyledCol, _extends({
     as: as
   }, props), children);

@@ -1,1 +1,1 @@
-export { default as SnackBar } from './SnackBar';
+export { default as Snackbar } from './SnackBar';
