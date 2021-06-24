@@ -5,6 +5,7 @@ const HeaderTypes= () => <>ProgressBar</>;
 
 HeaderTypes.propTypes={
     mode: PropTypes.string,
+    className: PropTypes.string,
 };
 
 HeaderTypes.defaultProps = {
