@@ -16,9 +16,6 @@ import {
   StyledToggleButton,
   StyledIcon,
   StyledNavigationFooter,
-  // StyledNavigationArrowInput,
-  // StyledNavigationArrowLabel,
-  // StyledNavigationArrowIcon,
 } from "./Navigation.styled";
 
 const NavigationSection = (props) => {
@@ -39,14 +36,12 @@ const NavigationSection = (props) => {
     return (
       <>
       {isWidth && (<StyledToggleButton onClick={handleToggle} style={{borderLeft:'2px solid #000' }}>
-          {/* <Box display="flex" alignItems="center"> */}
           {title && <StyledNavigationTitle>{title}</StyledNavigationTitle>}
           <Icon
             size="16"
             color="#172b4c"
             icon={open ? "chevron-right" : "chevron-down"}
           />
-          {/* </Box> */}
         </StyledToggleButton>)}
         <StyledNavigationSection>
           {open && (

@@ -16,10 +16,7 @@ import {
   StyledNavigationIcon,
   StyledToggleButton,
   StyledIcon,
-  StyledNavigationFooter,
-  // StyledNavigationArrowInput,
-  // StyledNavigationArrowLabel,
-  // StyledNavigationArrowIcon,
+  StyledNavigationFooter
 } from "./Navigation.styled";
 
 const Navigation = (props) => {
@@ -43,12 +40,13 @@ const Navigation = (props) => {
         <Box
           display="flex"
           justifyContent="space-between"
-          style={{ padding: "0 20px",marginBottom:"10px" }}
+          pl="20px"
+          pr="20px"
+          mb="10px"
         >
           <Icon size="16" color="#172b4c" icon="menu" onClick={handleSidebar} />
           {isWidth && <Avatar size={size} src={src} alt="largeAvatar" />}
         </Box>
-        {/* {children(isWidth)} */}
         {children &&
           React.Children.map(children, (child) => {
             if (React.isValidElement(child)) {
