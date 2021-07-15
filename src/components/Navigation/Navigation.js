@@ -16,23 +16,23 @@ import {
   StyledNavigationIcon,
   StyledToggleButton,
   StyledIcon,
-  StyledNavigationFooter
+  StyledNavigationFooter,
 } from "./Navigation.styled";
 
 const Navigation = (props) => {
   const { children, position, color, onClick, items, title, size, src } = props;
   const [isWidth, setIsWidth] = useState(true);
-  const [inlineStyle ,setInlineStyle] = useState({width:'300px'});
+  const [inlineStyle, setInlineStyle] = useState({ width: "300px" });
 
   const handleSidebar = () => {
     setIsWidth(!isWidth);
-    if(isWidth){
-    setInlineStyle({width:'60px', alignItems:'center' ,justifyContent:'center'})
-    } else 
-    {
-      setInlineStyle({width:'300px'});
-    }
-
+    isWidth
+      ? setInlineStyle({
+          width: "60px",
+          alignItems: "center",
+          justifyContent: "center",
+        })
+      : setInlineStyle({ width: "300px" });
   };
   return (
     <>
@@ -55,9 +55,9 @@ const Navigation = (props) => {
             return child;
           })}
       </StyledNavigation>
-      <StyledNavigationFooter style={inlineStyle} >
-      {isWidth &&  <Icon size="16" color="#172b4c" icon="settings" />}
-      {isWidth &&  <Icon size="16" color="#172b4c" icon="comment" />}
+      <StyledNavigationFooter style={inlineStyle}>
+        {isWidth && <Icon size="16" color="#172b4c" icon="settings" />}
+        {isWidth && <Icon size="16" color="#172b4c" icon="comment" />}
         <Icon size="16" color="#172b4c" icon="log-out" />
       </StyledNavigationFooter>
     </>
