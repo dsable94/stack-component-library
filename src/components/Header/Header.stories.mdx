@@ -1,6 +1,7 @@
 import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
 import Header from "./Header";
 import HeaderTypes from "./Header.types";
+import Image from "../Image/Image"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -27,6 +28,13 @@ import {Header} from "@stack-ui/components";
 <Preview withToolbar>
     <Story name="Dark">
          <Header mode="dark" fixed={true} />
+    </Story>
+</Preview>
+
+## logo
+<Preview withToolbar>
+    <Story name="logo">
+         <Header mode="light" logo={true} src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg"/> 
     </Story>
 </Preview>
 
