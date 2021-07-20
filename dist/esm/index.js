@@ -177,10 +177,10 @@ Object.defineProperty(exports, "Accordian", {
     return _Accordian.Accordian;
   }
 });
-Object.defineProperty(exports, "Snackbar", {
+Object.defineProperty(exports, "ToastMessage", {
   enumerable: true,
   get: function get() {
-    return _SnackBar.Snackbar;
+    return _Toast.ToastMessage;
   }
 });
 Object.defineProperty(exports, "Switch", {
@@ -278,7 +278,7 @@ var _CheckboxGroup = require("./components/CheckboxGroup");
 
 var _Accordian = require("./components/Accordian");
 
-var _SnackBar = require("./components/SnackBar");
+var _Toast = require("./components/Toast");
 
 var _Switch = require("./components/Switch");
 
