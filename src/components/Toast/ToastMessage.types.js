@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const SnackBarTypes= () => <>SnackBarTypes</>;
+const ToastMessageTypes= () => <>ToastMessageTypes</>;
  
-SnackBarTypes.propTypes={
+ToastMessageTypes.propTypes={
   snackBarHeading: PropTypes.bool,
   sanckBarText: PropTypes.bool,
   success: PropTypes.bool,
   error: PropTypes.bool
 };
 
-SnackBarTypes.defaultProps = {
+ToastMessageTypes.defaultProps = {
   snackBarHeading: 'True',
   sanckBarText: 'True',
   success: 'False',
   error: 'False'
 };
 
-export default SnackBarTypes;
+export default ToastMessageTypes;
