@@ -1,9 +1,7 @@
 import styled, {css} from "styled-components";
 import * as variable from "../../variable";
-// import StackInputGroupTypes from './StackInputGroup.types'
-import Form from 'react-bootstrap/Form';
 
-const StyledInputGroup = styled(Form)`
+const StyledInputGroup = styled.div`
 
     ${props =>
         props.bg

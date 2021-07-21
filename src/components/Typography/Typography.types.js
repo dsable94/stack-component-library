@@ -10,8 +10,16 @@ TypographyTypes.propTypes={
     isItalic: PropTypes.bool,
     textAlign: PropTypes.string,
     color:PropTypes.string,
-    type: PropTypes.oneOf(['heading', 'subHeading', 'paragraph']),
+    // type: PropTypes.oneOf(['heading', 'subHeading', 'paragraph']),
     size: PropTypes.string,
+    /**
+   * For the font weight of the Paragraph
+   * */
+    subHeading: PropTypes.bool,
+    /**
+   *  For the font weight of the Paragraph
+   * */
+    semiBold: PropTypes.bool
 };
 
 TypographyTypes.defaultProps = {

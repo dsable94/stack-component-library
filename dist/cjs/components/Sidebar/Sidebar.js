@@ -16,7 +16,8 @@ var Sidebar = function Sidebar(props) {
   var children = props.children,
       position = props.position,
       color = props.color,
-      onClick = props.onClick;
+      onClick = props.onClick,
+      className = props.className;
   return /*#__PURE__*/_react.default.createElement(_Sidebar.StyledSideBar, props, children);
 };
 

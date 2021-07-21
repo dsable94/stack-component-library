@@ -19,13 +19,13 @@ const Icon = React.forwardRef(
   ) => {
     const className = ({
       [`stack-icon`]: true,
-      [customClassName]: !!customClassName,
+      [customClassName]: true,
     });
 
     return (
       <StyledIcon
         ref={ref}
-        className={className}
+        className={customClassName}
         icon={icon}
         color={color}
         iconSize={size}

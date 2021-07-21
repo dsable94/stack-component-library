@@ -11,6 +11,8 @@ var _SearchBox = _interopRequireDefault(require("./SearchBox.styled"));
 
 var _Icon = require("../Icon");
 
+var _Box = require("../Box");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -35,11 +37,16 @@ var SearchBox = function SearchBox(props) {
       onClick = props.onClick,
       isError = props.isError,
       disabled = props.disabled,
-      hint = props.hint;
+      hint = props.hint,
+      width = props.width,
+      className = props.className,
+      searchIcon = props.searchIcon,
+      onChange = props.onChange,
+      onKeyDown = props.onKeyDown;
   var iconStyle = {
     position: "absolute",
-    right: "20px",
-    top: '6px'
+    left: "8px",
+    top: '8px'
   };
   return /*#__PURE__*/_react.default.createElement(_SearchBox.default, _extends({
     className: "search",
@@ -50,9 +57,14 @@ var SearchBox = function SearchBox(props) {
     onFocus: onFocus,
     onClick: onClick,
     isError: isError,
-    disabled: disabled
-  }, props), /*#__PURE__*/_react.default.createElement("input", {
-    type: "search",
+    disabled: disabled,
+    width: width,
+    onChange: onChange,
+    onKeyDown: onKeyDown
+  }, searchIcon ? /*#__PURE__*/_react.default.createElement(_Box.Box, {
+    className: "icon-search"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
     placeholder: placeholder,
     id: "Search",
     value: value,
@@ -61,7 +73,13 @@ var SearchBox = function SearchBox(props) {
     style: _objectSpread({}, iconStyle),
     icon: icon,
     size: size
-  }), isError && /*#__PURE__*/_react.default.createElement("p", null, hint));
+  }), isError && /*#__PURE__*/_react.default.createElement("p", null, hint)) : /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    placeholder: placeholder,
+    id: id,
+    value: value,
+    name: name
+  }), isError && /*#__PURE__*/_react.default.createElement("p", null, hint)));
 };
 
 var _default = SearchBox;

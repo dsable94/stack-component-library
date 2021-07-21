@@ -28,6 +28,10 @@ var StyledSearchBox = _styledComponents["default"].div.withConfig({
   return props.disabled ? (0, _styledComponents.css)(["  cursor:not-allowed;& label{cursor:not-allowed !important;}& input{cursor:not-allowed !important;}"]) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.isError ? (0, _styledComponents.css)(["  & input{background:rgb(248,217,215);border:1px solid #d00f0f;}& p{padding:5px 8px;color:#d00f0f;}"]) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.width ? (0, _styledComponents.css)(["width:", ";& input{width:100%;}"], props.width) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.width ? (0, _styledComponents.css)(["width:", ";& input{width:100%;}"], props.width) : (0, _styledComponents.css)([""]);
 });
 
 var _default = StyledSearchBox;

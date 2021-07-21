@@ -40,6 +40,7 @@ var Box = function Box(props) {
       opacity = props.opacity,
       width = props.width,
       textAlign = props.textAlign,
+      className = props.className,
       onClick = props.onClick;
   return /*#__PURE__*/_react.default.createElement(_Box.StyledBox, _extends({
     justifyItems: justifyItems,

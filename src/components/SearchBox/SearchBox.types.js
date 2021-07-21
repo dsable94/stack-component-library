@@ -18,6 +18,26 @@ SearchBoxTypes.propTypes={
    * Search box assistive text
    */
     hint: PropTypes.string,
+     /**
+   * The width of the SearchBox
+   */
+    width: PropTypes.string,
+    /** 
+     * The custom class name of the SearchBox
+     * */
+    className: PropTypes.string,
+     /** 
+     * The search icon of the SearchBox
+     * */
+    searchIcon: PropTypes.bool,
+     /** 
+     * On changes function
+     * */
+      onChange: PropTypes.func,
+     /** 
+     * On Key Down event
+     * */
+    onKeyDown: PropTypes.func,
 };
 
 SearchBoxTypes.defaultProps = {

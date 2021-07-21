@@ -51,7 +51,8 @@ var Menu = function Menu(props) {
     return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, item.isDivider ? /*#__PURE__*/_react.default.createElement("hr", null) : null, item.headerText ? /*#__PURE__*/_react.default.createElement("div", {
       className: "menu-header"
     }, item.headerText) : /*#__PURE__*/_react.default.createElement(_Menu.default.Item, {
-      href: item.link
+      href: item.link,
+      onClick: item.handler
     }, /*#__PURE__*/_react.default.createElement(_Icon.Icon, {
       icon: item.icon
     }), item.item));
