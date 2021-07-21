@@ -2,6 +2,7 @@ import React from "react";
 import StyledInputGroup from "./StackInputGroup.styled";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
+import { Icon } from '../Icon';
 
 
 const StackInputGroup = (props) =>{

@@ -3,11 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+Object.defineProperty(exports, "CheckBox", {
+  enumerable: true,
+  get: function get() {
+    return _CheckBox["default"];
+  }
+});
 
-var _Checkbox = _interopRequireDefault(require("./Checkbox"));
+var _CheckBox = _interopRequireDefault(require("./CheckBox"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var _default = _Checkbox["default"];
-exports["default"] = _default;

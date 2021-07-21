@@ -36,6 +36,10 @@ BoxTypes.propTypes={
     textAlign: PropTypes.string,
     bgImg: PropTypes.string,
     onClick: PropTypes.func,
+    /** 
+     * The custom class name of the Box
+     * */
+    className: PropTypes.string,
 
 };
 

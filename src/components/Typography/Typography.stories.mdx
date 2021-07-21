@@ -32,7 +32,7 @@ import {Typography} from "@stack-ui/components";
       <Typography type="heading" as="h4">
         Typography h4
       </Typography>
-      <Typography type="heading" as="h5">
+      <Typography as="h5" subHeading color="blue">
         Typography h5 
       </Typography>
       <Typography type="heading" as="h6">
@@ -47,28 +47,28 @@ import {Typography} from "@stack-ui/components";
 <Preview withToolbar>
 <Story name="SubHeading">
       <>
-      <Typography type="subHeading" as="h1">
+      <Typography as="h1">
         Typography h1
       </Typography>
-      <Typography type="subHeading" as="h1" isBold isItalic>
+      <Typography  as="h1" isBold isItalic>
         Typography h1
       </Typography>
-      <Typography type="subHeading" as="h2">
+      <Typography as="h2">
         Typography h2 
       </Typography>
-      <Typography type="subHeading" as="h3">
+      <Typography as="h3">
         Typography h3
       </Typography>
-      <Typography type="subHeading" as="h4">
+      <Typography as="h4">
         Typography h4
       </Typography>
-      <Typography type="subHeading" as="h5">
+      <Typography as="h5">
         Typography h5 
       </Typography>
-      <Typography type="subHeading" as="h6">
+      <Typography  as="h6">
         Typography h6
       </Typography>
-      <Typography type="subHeading" as="span">
+      <Typography as="span">
         Typography span text
       </Typography>
       </>
@@ -86,11 +86,11 @@ import {Typography} from "@stack-ui/components";
       <Typography isBold>
         This is bold paragrabh text
       </Typography>
-      <Typography isBold isItalic>
+      <Typography as="p" semiBold  color="black">
         This is bold with italic paragrabh text
       </Typography>
-      <Typography isItalic>
-        This is italic paragrabh text
+      <Typography as="h4" isItalic subHeading>
+        This is italic paragrabh text with semibold prop
       </Typography>
       </>
     </Story>

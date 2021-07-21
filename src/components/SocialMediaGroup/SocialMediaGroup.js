@@ -12,7 +12,7 @@ const SocialMediaGroup = (props) =>{
         <StyledSocialMediaGroup className="icon-bar" size={size} url={url} color={color}
             isRound={isRound} bgColor={bgColor} onClick={onClick} {...props}
         >
-            {iconType==='facebook' && 
+            {iconType==='facebook' &&
                 <a href={url}> <FaFacebookF /> </a>
             } 
              {iconType==='twitter' && 

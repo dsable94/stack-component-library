@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const CheckBoxTypes = () => <>Radio</>;
 
@@ -11,12 +11,15 @@ CheckBoxTypes.propTypes = {
   id: PropTypes.string,
   isError: PropTypes.bool,
   name: PropTypes.string,
+  /**
+   * The custom class name of the CheckBox
+   * */
+  className: PropTypes.string
 };
-
 
 CheckBoxTypes.defaultProps = {
-  disabled: 'false',
-  isError: 'false',
+  disabled: "false",
+  isError: "false"
 };
 
-export default CheckBoxTypes ;
+export default CheckBoxTypes;

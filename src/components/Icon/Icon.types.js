@@ -13,6 +13,8 @@ IconTypes.propTypes = {
   /** Color of icon. */
   color: PropTypes.string,
   onClick: PropTypes.func,
+   /** Custom Classname of icon. */
+   className: PropTypes.string,
 };
 
 IconTypes.defaultProps = {

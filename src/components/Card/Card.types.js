@@ -6,7 +6,7 @@ const CardTypes= () => <>StackCard</>;
 CardTypes.propTypes={
     cardTitle: PropTypes.string,
     subTitle:PropTypes.string,
-    bgColor: PropTypes.oneOf(['white', 'primary','secondary','success','info','warning','danger']),
+    bgColor: PropTypes.oneOf(['white', 'primary','secondary','success','info','warning','danger', 'any color']),
     isDisabled: PropTypes.bool,
     rounded:PropTypes.oneOf(['rounded','default']),
     imgPos:PropTypes.oneOf(['top', 'middle', 'bottom']),

@@ -37,7 +37,6 @@ ${props=> props.size ? css `
  ${props=> props.bgColor ? css `
  a {
     background: ${props.bgColor};
-    color: white;
  }
 `
 : css ``}

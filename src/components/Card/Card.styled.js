@@ -94,7 +94,7 @@ const StyledCard = Styled(Card)`
         h5,p {color:${variable.white}}
         `
         : css`
-            background-color: ${variable.white};
+            background-color: ${props.bgColor};
         `
     }
     h5 {
