@@ -48,13 +48,8 @@ var SearchBox = function SearchBox(props) {
     left: "8px",
     top: '8px'
   };
-<<<<<<< HEAD
-  return /*#__PURE__*/_react["default"].createElement(_SearchBox["default"], _extends({
-    className: "search",
-=======
   return /*#__PURE__*/_react["default"].createElement(_SearchBox["default"], {
     className: className,
->>>>>>> 4631ff4b94ad4fa3d8042bf87dc348ab5e4dda6f
     borderRadius: borderRadius,
     bg: bg,
     border: border,
@@ -62,11 +57,6 @@ var SearchBox = function SearchBox(props) {
     onFocus: onFocus,
     onClick: onClick,
     isError: isError,
-<<<<<<< HEAD
-    disabled: disabled
-  }, props), /*#__PURE__*/_react["default"].createElement("input", {
-    type: "search",
-=======
     disabled: disabled,
     width: width,
     onChange: onChange,
@@ -75,7 +65,6 @@ var SearchBox = function SearchBox(props) {
     className: "icon-search"
   }, /*#__PURE__*/_react["default"].createElement("input", {
     type: "text",
->>>>>>> 4631ff4b94ad4fa3d8042bf87dc348ab5e4dda6f
     placeholder: placeholder,
     id: "Search",
     value: value,
