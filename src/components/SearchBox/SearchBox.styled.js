@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledSearchBox = styled.div`
 
@@ -21,12 +21,12 @@ input {
 
 
 
-${props => props.border ? css `
+${props => props.border ? css`
 & input {
 border: ${props.border};
 }
-`: css `` } 
-${props => props.onFocus ? css `
+`: css``} 
+${props => props.onFocus ? css`
 input {
     &:focus {
         box-shadow: 0 0 3px rgb(212, 222, 225);
@@ -35,28 +35,28 @@ input {
         transition: all 0.5s ease;
     } }`
 
-    : css `` } 
+        : css``} 
 
-${props=>
-    props.bg
-    ? css`
+${props =>
+        props.bg
+            ? css`
     & input {
         background-color: ${props.bg};
         }
     `
-    :css ` `
-}
-${props=>
-    props.borderRadius
-    ? css`
+            : css` `
+    }
+${props =>
+        props.borderRadius
+            ? css`
     & input {
         border-radius: ${props.borderRadius};
     }
         `
-    :css `  `
-}
-${props => props.disabled 
-    ? css ` 
+            : css`  `
+    }
+${props => props.disabled
+        ? css` 
     cursor: not-allowed;
      & label {
       cursor: not-allowed !important;
@@ -65,10 +65,10 @@ ${props => props.disabled
         cursor: not-allowed !important;
         }
   `
-  : css `` }
+        : css``}
 
-  ${props => props.isError 
-    ? css ` 
+  ${props => props.isError
+        ? css` 
      & input {
         background: rgb(248,217,215);
         border: 1px solid #d00f0f;
@@ -78,9 +78,41 @@ ${props => props.disabled
         color: #d00f0f;
      }
   `
-  : css `` }
+        : css``}
+  ${props => props.width ? css`
+     width: ${props.width};
+    & input {
+        width: 100%;
+    }
+    `: css``} 
+
+.icon-search input {
+  padding-left: 30px;
+}
+
+  ${props => props.width ? css `
+    width: ${props.width};
+        & input {
+        width: 100%;
+        }
+    `: css `` } 
+
+.icon-search input {
+    padding-left: 30px;
+}
+
 
 `
 
+const StyledIcon = styled.div`
+.iconStyle {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+`
 
-export default StyledSearchBox;
+export {
+    StyledSearchBox,
+    StyledIcon
+} 

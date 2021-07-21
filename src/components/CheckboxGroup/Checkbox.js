@@ -1,8 +1,8 @@
 import React from "react";
 import { StyledCheckbox } from './Checkbox.styled';
 
-const Checkbox = (props) => {
-  const { label, disabled, isError, onClick, id, name, value  } = props;
+const CheckBox = (props) => {
+  const { label, disabled, isError, onClick, id, name, value, className  } = props;
   return (
     <StyledCheckbox {...props}>
     <label class="checklabel">{label} 
@@ -14,5 +14,5 @@ const Checkbox = (props) => {
   )
 }
 
-export default Checkbox;
+export default CheckBox;
  

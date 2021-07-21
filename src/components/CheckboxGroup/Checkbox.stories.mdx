@@ -1,19 +1,19 @@
-import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
-import Checkbox from './Checkbox';
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import CheckBox from './CheckBox';
 import CheckBoxTypes from './Checkbox.types';
 
-<Meta title="Components/Form Controls/Checkbox" />
+<Meta title="Components/Form Controls/CheckBox" />
 
 <Story name="Import" />
 
-# Checkbox
+# CheckBox
 
-Checkbox is used to provide the options to the user to be selected as per requirement.
+CheckBox is used to provide the options to the user to be selected as per requirement.
 
-## Import  
+## Import
 
 ```jsx
-import { Checkbox } from '@stack-ui/components';
+import { CheckBox } from '@stack-ui/components';
 ```
 
 ## Usage
@@ -21,11 +21,11 @@ import { Checkbox } from '@stack-ui/components';
 <Preview>
   <Story name="Usage">
     <>
-       <Checkbox label="label" name="checkbox" />
-       <br />
-        <Checkbox label="Checkbox disable" name="checkbox" disabled />
-        <br />
-       <Checkbox label="Invalid checkbox " name="checkbox" isError />
+      <CheckBox label="label" name="checkbox" />
+      <br />
+      <CheckBox label="Checkbox disable" name="checkbox" disabled />
+      <br />
+      <CheckBox label="Invalid checkbox " name="checkbox" isError />
     </>
   </Story>
 </Preview>

@@ -27,7 +27,8 @@ return (
       {options.map((item, key) => (
         <>
         {item.isDivider ? <hr /> : null}
-        {item.headerText ? <div className="menu-header">{item.headerText}</div> : <StyledMenu.Item href={item.link}>
+        {item.headerText ? <div className="menu-header">
+        {item.headerText}</div> : <StyledMenu.Item href={item.link} onClick={item.handler}>
         <Icon icon={item.icon} />
         {item.item}
       </StyledMenu.Item>}

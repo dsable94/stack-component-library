@@ -12,6 +12,8 @@ const StyledCol = styled(Col)`
     padding-bottom: .75rem;
     background-color: #bbeffd;
     border: 1px solid #61dafb;}
+
+    ${props => props.bgColor ? css ` background-color: ${props.bgColor};`: css `` }    
     
 `
 const StyledContainer = styled(Container)`
