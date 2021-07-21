@@ -34,11 +34,13 @@ var StackInputGroup = function StackInputGroup(props) {
       labelText = props.labelText,
       labelInline = props.labelInline,
       isError = props.isError,
-      hint = props.hint;
+      hint = props.hint,
+      onChange = props.onChange;
   return /*#__PURE__*/_react.default.createElement(_StackInputGroup.default, {
     disabled: disabled,
     isError: isError,
-    hint: hint
+    hint: hint,
+    onChange: onChange
   }, labelInline ? /*#__PURE__*/_react.default.createElement(_InputGroup.default, {
     size: size
   }, /*#__PURE__*/_react.default.createElement(_InputGroup.default.Prepend, null, /*#__PURE__*/_react.default.createElement(_InputGroup.default.Text, {

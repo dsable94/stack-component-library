@@ -25,7 +25,7 @@ export { Container, Row, Col } from './components/Layout';
 export { Radio } from './components/Radio';
 export { Checkbox } from './components/CheckboxGroup';
 export { Accordian } from './components/Accordian';
-export { Snackbar } from './components/SnackBar';
+export { ToastMessage } from './components/Toast';
 export { Switch } from './components/Switch';
 export { AdvanceTable } from './components/AdvanceTable';
 export { Menu } from './components/Menu';

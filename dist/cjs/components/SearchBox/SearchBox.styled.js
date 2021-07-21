@@ -9,14 +9,14 @@ exports.default = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var StyledSearchBox = _styledComponents.default.div.withConfig({
   displayName: "SearchBoxstyled__StyledSearchBox",
   componentId: "sc-1cgeyrw-0"
-})(["input{padding:6px;transition:all 0.5s ease;}position:relative;display:inline-block;", "  ", "  ", " ", " ", " ", ""], function (props) {
+})(["#Search{outline:0;}#Search::-webkit-search-cancel-button{position:relative;right:20px;cursor:pointer;}input{padding:6px;transition:all 0.5s ease;}position:relative;display:inline-block;", "  ", "  ", " ", " ", " ", ""], function (props) {
   return props.border ? (0, _styledComponents.css)(["& input{border:", ";}"], props.border) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.onFocus ? (0, _styledComponents.css)(["input{&:focus{box-shadow:0 0 3px rgb(212,222,225);border:1.8px solid rgb(210,208,208);outline:0;transition:all 0.5s ease;}}"]) : (0, _styledComponents.css)([""]);
