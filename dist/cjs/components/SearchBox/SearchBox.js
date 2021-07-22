@@ -48,8 +48,8 @@ var SearchBox = function SearchBox(props) {
     left: "8px",
     top: '8px'
   };
-  return /*#__PURE__*/_react.default.createElement(_SearchBox.default, _extends({
-    className: "search",
+  return /*#__PURE__*/_react.default.createElement(_SearchBox.default, {
+    className: className,
     borderRadius: borderRadius,
     bg: bg,
     border: border,
