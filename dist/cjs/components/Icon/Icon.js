@@ -35,10 +35,10 @@ var Icon = /*#__PURE__*/_react.default.forwardRef(function (_ref, ref) {
       onClick = _ref.onClick,
       rest = _objectWithoutProperties(_ref, _excluded);
 
-  var className = (_className = {}, _defineProperty(_className, "stack-icon", true), _defineProperty(_className, customClassName, !!customClassName), _className);
+  var className = (_className = {}, _defineProperty(_className, "stack-icon", true), _defineProperty(_className, customClassName, true), _className);
   return /*#__PURE__*/_react.default.createElement(_Icon.StyledIcon, _extends({
     ref: ref,
-    className: className,
+    className: customClassName,
     icon: icon,
     color: color,
     iconSize: size,

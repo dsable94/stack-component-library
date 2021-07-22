@@ -32,20 +32,21 @@ var Card = function Card(props) {
       imgPos = props.imgPos,
       cardMenu = props.cardMenu,
       border = props.border,
-      boxShadow = props.boxShadow;
+      boxShadow = props.boxShadow,
+      className = props.className;
 
   if (imgPos === "middle") {
     return /*#__PURE__*/_react["default"].createElement(_Card["default"], _extends({
       imgUrl: imgUrl,
       color: color,
       bgColor: bgColor,
-      border: border
-    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
+      border: border,
+      className: className
+    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, cardTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
-      as: "h6",
-      className: "text-muted"
-    }, subTitle)), /*#__PURE__*/_react["default"].createElement("img", {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), subTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+      as: "h6"
+    }, subTitle)), imgUrl && /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
     }), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)));
   } else if (imgPos === "top") {
@@ -53,11 +54,11 @@ var Card = function Card(props) {
       imgUrl: imgUrl,
       color: color,
       bgColor: bgColor
-    }, props), /*#__PURE__*/_react["default"].createElement("img", {
+    }, props), imgUrl && /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
-    }), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
+    }), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, cardTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), subTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)));
   } else if (imgPos === "bottom") {
@@ -65,11 +66,11 @@ var Card = function Card(props) {
       imgUrl: imgUrl,
       color: color,
       bgColor: bgColor
-    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
+    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, cardTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), subTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
-    }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), /*#__PURE__*/_react["default"].createElement("img", {
+    }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), imgUrl && /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
     }));
   } else if (imgPos === "bg") {
@@ -77,23 +78,24 @@ var Card = function Card(props) {
       imgUrl: imgUrl,
       color: color,
       bgColor: bgColor
-    }, props), /*#__PURE__*/_react["default"].createElement("img", {
+    }, props), imgUrl && /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
-    }), /*#__PURE__*/_react["default"].createElement(_Card["default"].ImgOverlay, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
+    }), /*#__PURE__*/_react["default"].createElement(_Card["default"].ImgOverlay, null, cardTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), subTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
     }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)));
   } else {
     return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_Card["default"], _extends({
       imgUrl: imgUrl,
       color: color,
-      bgColor: bgColor
-    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
+      bgColor: bgColor,
+      className: className
+    }, props), /*#__PURE__*/_react["default"].createElement(_Card["default"].Body, null, cardTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Title, {
       as: "h5"
-    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
+    }, cardTitle), /*#__PURE__*/_react["default"].createElement(_Card.StyledCardRight, null, cardMenu), subTitle && /*#__PURE__*/_react["default"].createElement(_Card["default"].Subtitle, {
       as: "h6"
-    }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), /*#__PURE__*/_react["default"].createElement("img", {
+    }, subTitle), /*#__PURE__*/_react["default"].createElement(_Card["default"].Text, null, children)), imgUrl && /*#__PURE__*/_react["default"].createElement("img", {
       src: imgUrl
     })));
   }

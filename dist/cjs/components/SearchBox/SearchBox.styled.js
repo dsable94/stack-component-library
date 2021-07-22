@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.StyledIcon = exports.StyledSearchBox = void 0;
 
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
 
@@ -34,5 +34,11 @@ var StyledSearchBox = _styledComponents.default.div.withConfig({
   return props.width ? (0, _styledComponents.css)(["width:", ";& input{width:100%;}"], props.width) : (0, _styledComponents.css)([""]);
 });
 
-var _default = StyledSearchBox;
-exports.default = _default;
+exports.StyledSearchBox = StyledSearchBox;
+
+var StyledIcon = _styledComponents.default.div.withConfig({
+  displayName: "SearchBoxstyled__StyledIcon",
+  componentId: "sc-1cgeyrw-1"
+})([".iconStyle{position:absolute;left:8px;top:8px;}"]);
+
+exports.StyledIcon = StyledIcon;

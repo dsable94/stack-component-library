@@ -16,22 +16,26 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 var Typography = _styledComponents.default.div.withConfig({
   displayName: "Typographystyled__Typography",
   componentId: "sc-1fat070-0"
-})(["{display:block;margin-left:0;margin-right:0;margin-bottom:0;", " ", " ", " ", " ", " ", " ", " ", "}"], function (props) {
-  return props.color ? (0, _styledComponents.css)([" color:", ";"], props.color) : (0, _styledComponents.css)([""]);
+})(["{display:block;margin-left:0;margin-right:0;margin-bottom:0;", " ", " ", " ", " ", " ", " ", " ", " ", " ", "}"], function (props) {
+  return props.color ? (0, _styledComponents.css)(["color:", ";"], props.color) : (0, _styledComponents.css)([""]);
 }, function (props) {
-  return props.textShadow ? (0, _styledComponents.css)([" text-shadow:", ";"], props.textShadow) : (0, _styledComponents.css)([""]);
+  return props.textShadow ? (0, _styledComponents.css)(["text-shadow:", ";"], props.textShadow) : (0, _styledComponents.css)([""]);
 }, function (props) {
   return props.textAlign === "center" ? (0, _styledComponents.css)(["text-align:center;"]) : props.textAlign === "left" ? (0, _styledComponents.css)(["text-align:left;"]) : props.textAlign === "right" ? (0, _styledComponents.css)(["text-align:right;"]) : (0, _styledComponents.css)([""]);
 }, function (props) {
-  return props.type === "heading" ? (0, _styledComponents.css)(["font-weight:bold;"]) : props.type === "subHeading" ? (0, _styledComponents.css)(["font-weight:600;"]) : props.type === "light" ? (0, _styledComponents.css)(["font-weight:300;"]) : (0, _styledComponents.css)(["font-weight:normal;"]);
+  return props.type === "heading" ? (0, _styledComponents.css)(["font-weight:bold;"]) : props.type === "light" ? (0, _styledComponents.css)(["font-weight:300;"]) : (0, _styledComponents.css)(["font-weight:normal;"]);
 }, function (props) {
   return props.isBold ? (0, _styledComponents.css)(["font-weight:bold;"]) : (0, _styledComponents.css)(["font-weight:normal;"]);
 }, function (props) {
   return props.isItalic ? (0, _styledComponents.css)(["font-style:italic;"]) : (0, _styledComponents.css)(["font-style:normal;"]);
 }, function (props) {
-  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:.67em;"]) : props.as === "span" ? (0, _styledComponents.css)(["display:inline-block;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
+  return props.as === "h1" ? (0, _styledComponents.css)(["font-size:2em;"]) : props.as === "h2" ? (0, _styledComponents.css)(["font-size:1.5em;"]) : props.as === "h3" ? (0, _styledComponents.css)(["font-size:1.17em;"]) : props.as === "h4" ? (0, _styledComponents.css)(["font-size:1em;"]) : props.as === "h5" ? (0, _styledComponents.css)(["font-size:0.83em;"]) : props.as === "h6" ? (0, _styledComponents.css)(["font-size:0.67em;"]) : props.as === "span" ? (0, _styledComponents.css)(["display:inline-block;"]) : (0, _styledComponents.css)(["font-size:1em;"]);
 }, function (props) {
-  return props.size ? (0, _styledComponents.css)([" font-size:", ";"], props.size) : (0, _styledComponents.css)([""]);
+  return props.size ? (0, _styledComponents.css)(["font-size:", ";"], props.size) : (0, _styledComponents.css)([""]);
+}, function (props) {
+  return props.semiBold ? (0, _styledComponents.css)(["font-weight:600;"]) : (0, _styledComponents.css)(["font-weight:normal;"]);
+}, function (props) {
+  return props.subHeading ? (0, _styledComponents.css)(["font-weight:500;"]) : (0, _styledComponents.css)(["font-weight:normal;"]);
 });
 
 var _default = Typography;

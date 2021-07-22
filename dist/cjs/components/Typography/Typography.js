@@ -21,7 +21,9 @@ var Typography = function Typography(props) {
       isItalic = props.isItalic,
       textAlign = props.textAlign,
       color = props.color,
-      size = props.size;
+      size = props.size,
+      subHeading = props.subHeading,
+      semiBold = props.semiBold;
   return /*#__PURE__*/_react.default.createElement(_Typography.default, _extends({
     type: type,
     as: as,
