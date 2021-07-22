@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledCheckbox } from './Checkbox.styled';
+import { StyledCheckbox } from './CheckBox.styled';
 
 const CheckBox = (props) => {
   const { label, disabled, isError, onClick, id, name, value, className  } = props;
