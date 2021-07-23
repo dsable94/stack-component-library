@@ -7,6 +7,7 @@ export { Header } from './components/Header';
 export { Footer } from './components/Footer';
 export { StackInputGroup } from './components/StackInputGroup';
 export { NavBar } from './components/NavBar';
+export { Navigation } from './components/Navigation';
 export { ProgressBar } from './components/ProgressBar';
 export { Sidebar } from './components/Sidebar';
 export { Spinner } from './components/Spinner';
