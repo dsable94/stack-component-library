@@ -57,6 +57,12 @@ Object.defineProperty(exports, "NavBar", {
     return _NavBar.NavBar;
   }
 });
+Object.defineProperty(exports, "Navigation", {
+  enumerable: true,
+  get: function get() {
+    return _Navigation.Navigation;
+  }
+});
 Object.defineProperty(exports, "ProgressBar", {
   enumerable: true,
   get: function get() {
@@ -243,6 +249,8 @@ var _Footer = require("./components/Footer");
 var _StackInputGroup = require("./components/StackInputGroup");
 
 var _NavBar = require("./components/NavBar");
+
+var _Navigation = require("./components/Navigation");
 
 var _ProgressBar = require("./components/ProgressBar");
 
