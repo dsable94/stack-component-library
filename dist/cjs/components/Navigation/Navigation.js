@@ -61,6 +61,15 @@ var Navigation = function Navigation(props) {
       inlineStyle = _useState4[0],
       setInlineStyle = _useState4[1];
 
+  var _useState5 = (0, _react.useState)(true),
+      _useState6 = _slicedToArray(_useState5, 2),
+      open = _useState6[0],
+      setOpen = _useState6[1];
+
+  var handleToggle = function handleToggle() {
+    setOpen(!open);
+  };
+
   var handleSidebar = function handleSidebar() {
     setIsWidth(!isWidth);
     isWidth ? setInlineStyle({
@@ -92,7 +101,10 @@ var Navigation = function Navigation(props) {
   })), children && _react.default.Children.map(children, function (child) {
     if ( /*#__PURE__*/_react.default.isValidElement(child)) {
       return /*#__PURE__*/_react.default.cloneElement(child, {
-        isWidth: isWidth
+        isWidth: isWidth,
+        handleToggle: handleToggle,
+        setOpen: setOpen,
+        open: open
       });
     }
 
