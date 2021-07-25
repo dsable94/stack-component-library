@@ -23,6 +23,10 @@ const Navigation = (props) => {
   const { children, position, color, onClick, items, title, size, src } = props;
   const [isWidth, setIsWidth] = useState(true);
   const [inlineStyle, setInlineStyle] = useState({ width: "300px" });
+  const [open, setOpen] = useState(true);
+  const handleToggle = () => {
+    setOpen(!open);
+  };
 
   const handleSidebar = () => {
     setIsWidth(!isWidth);
@@ -50,7 +54,7 @@ const Navigation = (props) => {
         {children &&
           React.Children.map(children, (child) => {
             if (React.isValidElement(child)) {
-              return React.cloneElement(child, { isWidth });
+              return React.cloneElement(child, { isWidth, handleToggle, setOpen, open  });
             }
             return child;
           })}

@@ -26,13 +26,13 @@ const NavigationSection = (props) => {
       items,
       active,
       as,
+      handleToggle,
+      setOpen,
+      open,
       className: customClassName,
       ...rest
     } = props;
-    const [open, setOpen] = useState(true);
-    const handleToggle = () => {
-      setOpen(!open);
-    };
+   
     return (
       <>
       {isWidth && (<StyledToggleButton onClick={handleToggle} style={{borderLeft:'2px solid #000' }}>
