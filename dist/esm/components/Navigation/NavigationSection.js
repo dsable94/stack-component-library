@@ -47,7 +47,7 @@ var NavigationSection = function NavigationSection(props) {
   return /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, isWidth && /*#__PURE__*/_react["default"].createElement(_Navigation.StyledToggleButton, {
     onClick: handleToggle,
     style: {
-      borderLeft: '2px solid #000'
+      borderLeft: "2px solid #000"
     }
   }, title && /*#__PURE__*/_react["default"].createElement(_Navigation.StyledNavigationTitle, null, title), /*#__PURE__*/_react["default"].createElement(_Icon.Icon, {
     size: "16",
