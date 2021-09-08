@@ -1,0 +1,57 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Chip from "./chip";
+import ChipTypes from "./chip.types";
+
+
+<Meta title="Components/Chip" component="Chip" />
+
+<Story name="Import" />
+
+# Chip
+
+## Import
+
+```jsx
+import {Chip} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="ChipUsage">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="Basic"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Disable"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Clickable" avatar={alt:"img",src:"/image/abc.png"}/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip  label="Deletable"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip   label="Custom delete icon"/>
+       </span> 
+       </div>
+       <div style={{display:"flex", marginTop:20}}>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Primary"/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Secoundary"/>
+       </span>
+       </div>
+        </>
+    </Story>
+</Preview>
+
+
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ChipTypes} />
