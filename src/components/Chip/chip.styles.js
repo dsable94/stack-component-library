@@ -20,6 +20,17 @@ const StyledChip = styled.div`
     border-radius: 50%;
   }
 
+  .primary{
+    background-color: #FF0000;
+    color: aliceblue;
+  }
+
+  .secoundary{
+    background-color: #41789e;
+    color: aliceblue;
+  }
+
+
 `
 
 export default StyledChip;

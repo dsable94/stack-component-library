@@ -3,6 +3,7 @@ export { Badge } from './components/Badge';
 export { Button } from './components/Button';
 export { Card } from './components/Card';
 export { Chart } from './components/Chart';
+export { Chip }  from './components/Chip';
 export { Header } from './components/Header';
 export { Footer } from './components/Footer';
 export { StackInputGroup } from './components/StackInputGroup';

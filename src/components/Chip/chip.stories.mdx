@@ -3,6 +3,7 @@ import Chip from "./chip";
 import ChipTypes from "./chip.types";
 
 
+
 <Meta title="Components/Chip" component="Chip" />
 
 <Story name="Import" />
@@ -27,7 +28,7 @@ import {Chip} from "@stack-ui/components";
        <Chip label="Disable"/>
        </span> 
         <span style={{marginRight:20}}>
-       <Chip label="Clickable" avatar={alt:"img",src:"/image/abc.png"}/>
+       <Chip label="Clickable" />
        </span> 
         <span style={{marginRight:20}}>
        <Chip  label="Deletable"/>
@@ -41,8 +42,25 @@ import {Chip} from "@stack-ui/components";
        <Chip  label="Delete Primary"/>
        </span>
        <span style={{marginRight:20}}>
-       <Chip  label="Delete Secoundary"/>
+       <Chip  label="Delete Secoundary" color="primary"/>
        </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Primary" color="secoundary"/>
+       </span>
+       </div>
+        </>
+    </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="ChipArray">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="arraychip"/>
+       </span> 
+       
+       
        </div>
         </>
     </Story>
