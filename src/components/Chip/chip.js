@@ -1,45 +1,66 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import StyledChip from "./chip.styles";
-import { Icon } from '../Icon';
 import { Data } from "./data";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 
 const Chip = (props) => {
-  let { label, avatar, color } = props
+  const [chipData, setchipData] = useState(Data)
+  let { label, avatar, color,icon, disabled, variant, size} = props
 
+  const handleDelete = (item, index) => () => {
+    const leftchip = [...chipData]
+    leftchip.splice(index, 1);
+    setchipData(leftchip)
 
-  useEffect(() => {
-    console.log("pppppppppp", props, Data)
-  }, [])
+  };
   return (
+    
     <StyledChip >
       {
-
+      
+        variant !== "outlined" &&
         label !== "arraychip" ?
-          <div className={color == "primary" ? "chip primary" : color == "secoundary" ? "chip secoundary" : "chip"}>
-            <img src="img_avatar.jpg" width="50" height="50" />
+          <div className={color == "primary" ? "chip primary" : color == "secoundary" ? "chip secoundary" : size== "small" ? "chipsmall" : "chip"  }>
+          {icon && <FontAwesomeIcon icon={icon}/> }
+          {avatar && <sapn className="avatar">{avatar}</sapn>}
 
             {label}
           </div>
           :
+         
+         
           <>
             {
-              Data.map((item, index) => {
+               variant !== "outlined" &&
+              chipData.map((item, index) => {
                 return (
                   <div className="chip">
                     {item.label}
-                    <span>X</span>
+                    <FontAwesomeIcon icon={icon} className="cross" onClick={handleDelete(item, index)} />
                   </div>
                 )
               })
 
             }
+
+            {
+               variant == "outlined" &&
+               <div className={color == "primary" ? "chipoutline primaryout" : color == "secoundary" ? "chipoutline secoundaryout" : "chipoutline"}>
+          {icon && <FontAwesomeIcon icon={icon}/> }
+          {avatar && <sapn className="avatar">{avatar}</sapn>}
+
+            {label}
+          </div>
+            }
           </>
 
       }
-
-
+      
     </StyledChip>
+    
   );
 }
 
