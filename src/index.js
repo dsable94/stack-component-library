@@ -1,3 +1,4 @@
+// Version updated to v5
 export { Avatar } from './components/Avatar';
 export { Badge } from './components/Badge';
 export { Button } from './components/Button';
