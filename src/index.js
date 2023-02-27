@@ -1,2 +1,2 @@
 // Version updated to v5
-export { ToolTip } from './components/ToolTip';
+export { Typography } from './components/Typography';
