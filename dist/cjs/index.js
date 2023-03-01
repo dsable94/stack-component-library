@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Box", {
     return _Box.Box;
   }
 });
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button.Button;
+  }
+});
 Object.defineProperty(exports, "Icon", {
   enumerable: true,
   get: function get() {
@@ -38,3 +44,4 @@ var _Box = require("./components/Box");
 var _SearchBox = require("./components/SearchBox");
 var _Icon = require("./components/Icon");
 var _StackInputGroup = require("./components/StackInputGroup");
+var _Button = require("./components/Button");

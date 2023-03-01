@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[170],{1717:function(module,exports){module.exports=function(hljs){return{subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_highlight_vbscriptHtml.24450cce403d1054bd25.bundle.js.map
