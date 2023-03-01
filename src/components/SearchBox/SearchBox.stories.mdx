@@ -1,0 +1,35 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import SearchBox from "./SearchBox";
+import SearchBoxTypes from "./SearchBox.types";
+ 
+
+<Meta title="Components/SearchBox" component="SearchBox" />
+
+<Story name="Import" />
+
+# Search Box
+
+## Import
+
+```jsx
+import {SearchBox} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+         <SearchBox width="60%" placeholder="search..." bg="#fff" borderRadius="4px" border="1px solid #d7e5e773" onFocus />
+         <br /><br />
+       <SearchBox placeholder="search..." bg="#d7e5e773" borderRadius="4px" border="1px solid #d7e5e773" isError hint="invalid search item" />
+        <br />
+       <SearchBox searchIcon placeholder="search..." bg="#fff" icon="search" size="12px" borderRadius="4px" border="1px solid #d7e5e773" disabled />
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={SearchBoxTypes} />

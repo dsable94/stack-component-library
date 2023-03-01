@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Box", {
     return _Box.Box;
   }
 });
+Object.defineProperty(exports, "SearchBox", {
+  enumerable: true,
+  get: function get() {
+    return _SearchBox.SearchBox;
+  }
+});
 Object.defineProperty(exports, "Typography", {
   enumerable: true,
   get: function get() {
@@ -17,3 +23,4 @@ Object.defineProperty(exports, "Typography", {
 });
 var _Typography = require("./components/Typography");
 var _Box = require("./components/Box");
+var _SearchBox = require("./components/SearchBox");
