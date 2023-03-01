@@ -1,0 +1,39 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Box from "./Box";
+import BoxTypes from "./Box.types";
+
+<Meta title="Components/Box" component="Rows" />
+
+<Story name="Import" />
+
+# Box
+
+## <p>Box is kind of div with display: flex and comes with helpful style shorthand. It renders a div element. it is also a layout utility component that makes it easy to stack elements together and apply a space between them.</p>
+
+```jsx
+import {Box} from "@stack-ui/components";
+```
+## Example with Label
+
+<Preview withToolbar>
+<Story name="-Default">
+    <>
+    <Box textAlign="center" p="0px" pt="20px">helpful style shorthand. It renders a "Alligned in center"</Box>
+    <Box textAlign="left" p="0px" pt="20px">helpful style shorthand. It renders a "Alligned in left"</Box>
+    <Box textAlign="right" p="0px" pt="20px">helpful style shorthand. It renders a "Alligned in right"</Box>
+     <Box width="50%" background="#e7e1e1" p="0px" pt="20px" border="1px solid blue">with border property, It renders a Box with background color</Box>
+    <br />
+    <br />
+    <Box  textAlign="center" pt="20px" bgImg="url(https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg)">
+    The Box with background image props.</Box>
+    </>
+</Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={BoxTypes} />
+
+
