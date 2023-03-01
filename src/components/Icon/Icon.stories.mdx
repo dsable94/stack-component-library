@@ -1,0 +1,36 @@
+import { Meta, Props, Preview, Story } from '@storybook/addon-docs/blocks';
+import Icon from './Icon';
+import IconTypes from './Icon.types';
+
+<Meta title="Components/Icon"  />
+
+<Story name="Import" />
+
+# Icon
+
+Icons symbolize common actions, features, and themes throughout our app.
+
+Icons are powerful visual helpers and should be used with care. Overuse quickly results in user interfaces that are visually overwhelming or distracting.
+
+## Import
+
+```jsx
+import { Icon } from '@stack-ui/components';
+```
+
+<Preview withToolbar>
+  <Story name="Usage">
+    <>
+      <Icon size={12} icon={'add'} />
+      <Icon icon={'add'} />
+      <Icon size={12} icon={'plus'} />
+      <Icon size={18} icon={'plus'} className="newabc" />
+    </>
+   </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={IconTypes} />

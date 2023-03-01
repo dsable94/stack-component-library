@@ -1,6 +1,6 @@
 import React from "react";
 import {StyledSearchBox, StyledIcon} from './SearchBox.styled';
-// import {Icon} from '../Icon';
+import {Icon} from '../Icon';
 import {Box} from '../Box';
 
 
@@ -17,7 +17,7 @@ const SearchBox = (props) =>{
               <input type="text" placeholder={placeholder} id={id}
                 value={value} name={name} />
                 <StyledIcon>
-               {/* <Icon className="iconStyle" icon={icon} size={size}></Icon>  */}
+               <Icon className="iconStyle" icon={icon} size={size}></Icon> 
                 </StyledIcon>
                {isError && <p>{hint}</p> }
              </Box>
