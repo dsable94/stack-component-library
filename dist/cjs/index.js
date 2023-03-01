@@ -21,6 +21,12 @@ Object.defineProperty(exports, "SearchBox", {
     return _SearchBox.SearchBox;
   }
 });
+Object.defineProperty(exports, "StackInputGroup", {
+  enumerable: true,
+  get: function get() {
+    return _StackInputGroup.StackInputGroup;
+  }
+});
 Object.defineProperty(exports, "Typography", {
   enumerable: true,
   get: function get() {
@@ -31,3 +37,4 @@ var _Typography = require("./components/Typography");
 var _Box = require("./components/Box");
 var _SearchBox = require("./components/SearchBox");
 var _Icon = require("./components/Icon");
+var _StackInputGroup = require("./components/StackInputGroup");

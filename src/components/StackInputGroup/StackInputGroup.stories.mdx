@@ -1,0 +1,79 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import StackInputGroup from "./StackInputGroup";
+import StackInputGroupTypes from "./StackInputGroup.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/StackInputGroup" component="StackInputGroup" />
+
+<Story name="Import" />
+
+# Input Group
+
+## Import
+
+```jsx
+import {StackInputGroup} from "@stack-ui/components";
+```
+## Basic Form and Input Field
+
+<Preview withToolbar>
+    <Story name="Usage">
+         <Row>
+            <Col xl="6">
+            <StackInputGroup size="sm" labelText="Name" type="text" />
+            <p> </p>
+            <StackInputGroup size="sm" labelText="Email" type="email" labelInline />
+            <p> </p>
+            <StackInputGroup size="sm" labelText="Date" type="date" />
+            <p> </p>
+            <StackInputGroup labelText="Password" type="password" value="12345" />
+            <p> </p>
+             <StackInputGroup labelText="Website" type="webiste" placeholder="eg-www.website.com" />
+            <p> </p>
+             <StackInputGroup as="textarea" labelText="Message" rows="3" />
+             <p> </p>
+            <StackInputGroup size="sm" labelText="Read Only" type="text" value="Read Only" disabled />
+            </Col>
+             <Col xl="6">
+            <StackInputGroup size="sm" as="select" labelText="Input Select" bg>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </StackInputGroup>
+            <p> </p>
+            <StackInputGroup size="sm" as="select" labelText="Multiple Select" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </StackInputGroup>
+            <p> </p>
+             <StackInputGroup labelText="Default File Input" type="file" /> 
+             <p> </p>
+            <StackInputGroup labelText="Range" type="range" /> 
+             <p> </p>
+            <StackInputGroup labelText="Color" type="color" value="#56c2d6"/> 
+             <p> </p>
+             <StackInputGroup size="sm" labelText="Disable input" type="text"  disabled />
+            <p> </p>
+              
+            </Col>
+             <Col xl="6">
+                <StackInputGroup size="sm" labelText="Invalid input" type="text"  isError hint="error occured..." />
+                <p> </p>
+             </Col>
+            
+           
+        </Row>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={StackInputGroupTypes} />
