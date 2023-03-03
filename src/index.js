@@ -8,4 +8,3 @@ export { Button } from './components/Button';
 export { Avatar } from './components/Avatar';
 export { Layout } from './components/Layout';
 export { Switch } from './components/Switch';
-export { StackModal } from './components/StackModal';

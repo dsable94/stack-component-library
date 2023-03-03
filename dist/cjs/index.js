@@ -45,12 +45,6 @@ Object.defineProperty(exports, "StackInputGroup", {
     return _StackInputGroup.StackInputGroup;
   }
 });
-Object.defineProperty(exports, "StackModal", {
-  enumerable: true,
-  get: function get() {
-    return _StackModal.StackModal;
-  }
-});
 Object.defineProperty(exports, "Switch", {
   enumerable: true,
   get: function get() {
@@ -72,4 +66,3 @@ var _Button = require("./components/Button");
 var _Avatar = require("./components/Avatar");
 var _Layout = require("./components/Layout");
 var _Switch = require("./components/Switch");
-var _StackModal = require("./components/StackModal");
