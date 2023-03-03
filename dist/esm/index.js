@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Avatar", {
+  enumerable: true,
+  get: function get() {
+    return _Avatar.Avatar;
+  }
+});
 Object.defineProperty(exports, "Box", {
   enumerable: true,
   get: function get() {
@@ -45,3 +51,4 @@ var _SearchBox = require("./components/SearchBox");
 var _Icon = require("./components/Icon");
 var _StackInputGroup = require("./components/StackInputGroup");
 var _Button = require("./components/Button");
+var _Avatar = require("./components/Avatar");
