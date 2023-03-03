@@ -45,6 +45,12 @@ Object.defineProperty(exports, "StackInputGroup", {
     return _StackInputGroup.StackInputGroup;
   }
 });
+Object.defineProperty(exports, "Switch", {
+  enumerable: true,
+  get: function get() {
+    return _Switch.Switch;
+  }
+});
 Object.defineProperty(exports, "Typography", {
   enumerable: true,
   get: function get() {
@@ -59,3 +65,4 @@ var _StackInputGroup = require("./components/StackInputGroup");
 var _Button = require("./components/Button");
 var _Avatar = require("./components/Avatar");
 var _Layout = require("./components/Layout");
+var _Switch = require("./components/Switch");

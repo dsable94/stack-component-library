@@ -1,0 +1,39 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Switch from './Switch';
+import SwitchTypes from './Switch.types';
+
+
+<Meta title="Components/Switch" component="Switch"   />
+
+<Story name="Import" />
+
+# Switch
+
+A Switch component typically represents a s 
+
+
+## Import  
+
+```jsx
+import { Switch } from '@stack-ui/components';
+```
+
+
+## Switch 
+
+<Preview withToolbar>
+    <Story name="switch">
+        <>
+         <Switch label="switch btn" isBold="600" color="#ccc" />
+         <br />
+         <br />
+          <Switch isChecked label="checked label" />
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={SwitchTypes} />
