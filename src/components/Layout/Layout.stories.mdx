@@ -1,0 +1,108 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import { Container, Row, Col} from "./Layout";
+import {RowTypes, ColTypes, ContainerTypes} from "./Layout.types";
+
+<Meta title="Components/Layout" component="Layout" />
+
+<Story name="Import" />
+
+# Layout (Container, Row, Col)
+
+## Import
+
+```jsx
+import {Layout} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+        <Container fluid>
+        <Row>
+            <Col className="temp" bgColor="red">1 of 1</Col>
+        </Row>
+        </Container>
+        <p> </p>
+        <Container>
+  <Row>
+    <Col className="temp">1 of 2</Col>
+    <Col className="temp">2 of 2</Col>
+  </Row>
+  <Row>
+    <Col className="temp">1 of 3</Col>
+    <Col className="temp">2 of 3</Col>
+    <Col className="temp">3 of 3</Col>
+  </Row>
+</Container>
+        </>
+    </Story>
+</Preview>
+
+## Resposive Grid
+
+<Preview withToolbar>
+    <Story name="responsive-grid">
+        <>
+        <Container>
+  <Row>
+    <Col className="temp" sm={8}>sm=8</Col>
+    <Col className="temp" sm={4}>sm=4</Col>
+  </Row>
+  <Row>
+    <Col className="temp" sm>sm=true</Col>
+    <Col className="temp" sm>sm=true</Col>
+    <Col className="temp" sm>sm=true</Col>
+  </Row>
+</Container>
+<p> </p>
+        <Container>
+  <Row>
+    <Col className="temp" xs={12} md={8}>
+      xs=12 md=8
+    </Col>
+    <Col className="temp" xs={6} md={4}>
+      xs=6 md=4
+    </Col>
+  </Row>
+  <Row>
+    <Col className="temp" xs={6} md={4}>
+      xs=6 md=4
+    </Col>
+    <Col className="temp" xs={6} md={4}>
+      xs=6 md=4
+    </Col>
+    <Col className="temp" xs={6} md={4}>
+      xs=6 md=4
+    </Col>
+  </Row>
+  <Row>
+    <Col className="temp" xs={6}>xs=6</Col>
+    <Col className="temp" xs={6}>xs=6</Col>
+  </Row>
+</Container>
+<p> </p>
+<Container>
+  <Row>
+    <Col className="temp" xs>First, but unordered</Col>
+    <Col className="temp" xs={{ order: 12 }}>Second, but last</Col>
+    <Col className="temp" xs={{ order: 1 }}>Third, but second</Col>
+  </Row>
+</Container>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Row Props
+
+<Props of={RowTypes} />
+
+## Cols Props
+
+<Props of={ColTypes} />
+
+## Container Props
+
+<Props of={ContainerTypes} />

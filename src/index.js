@@ -6,3 +6,4 @@ export { Icon } from './components/Icon';
 export { StackInputGroup } from './components/StackInputGroup';
 export { Button } from './components/Button';
 export { Avatar } from './components/Avatar';
+export { Layout } from './components/Layout';

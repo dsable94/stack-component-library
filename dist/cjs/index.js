@@ -27,6 +27,12 @@ Object.defineProperty(exports, "Icon", {
     return _Icon.Icon;
   }
 });
+Object.defineProperty(exports, "Layout", {
+  enumerable: true,
+  get: function get() {
+    return _Layout.Layout;
+  }
+});
 Object.defineProperty(exports, "SearchBox", {
   enumerable: true,
   get: function get() {
@@ -52,3 +58,4 @@ var _Icon = require("./components/Icon");
 var _StackInputGroup = require("./components/StackInputGroup");
 var _Button = require("./components/Button");
 var _Avatar = require("./components/Avatar");
+var _Layout = require("./components/Layout");
