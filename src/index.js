@@ -5,3 +5,4 @@ export { SearchBox } from './components/SearchBox';
 export { Icon } from './components/Icon';
 export { StackInputGroup } from './components/StackInputGroup';
 export { Button } from './components/Button';
+export { Avatar } from './components/Avatar';
