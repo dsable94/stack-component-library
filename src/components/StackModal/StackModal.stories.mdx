@@ -1,0 +1,41 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import StackModal from "./StackModal";
+import StackModalTypes from "./StackModal.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Button from '../Button/Button'; 
+
+<Meta title="Components/StackModal" component="StackModalTypes" />
+
+<Story name="Import" />
+
+# Modal
+
+## Import
+
+```jsx
+import {StackModal} from "@stack-ui/components";
+```
+## Static Markup
+
+<Preview withToolbar>
+    <Story name="Modal info ">
+      <StackModal modalBodyText="Modal body text goes here." modalTitle="Modal Component" />
+    </Story>    
+</Preview>
+
+## Live Demo
+<Preview liveDemo>
+    <Story name="Live Demo ">
+      <StackModal LiveDemo modalBodyText="Woohoo, you're reading this text in a modal!" modalTitle="Modal Heaading">
+        <Button btnType="primary" btnVariant="contained"> Primary </Button>
+      </StackModal>
+    </Story>    
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={StackModalTypes} />
