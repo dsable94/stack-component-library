@@ -123,6 +123,12 @@ Object.defineProperty(exports, "Navigation", {
     return _Navigation.Navigation;
   }
 });
+Object.defineProperty(exports, "Notification", {
+  enumerable: true,
+  get: function get() {
+    return _Notification.Notification;
+  }
+});
 Object.defineProperty(exports, "Pagination", {
   enumerable: true,
   get: function get() {
@@ -248,6 +254,7 @@ var _Footer = require("./components/Footer");
 var _StackInputGroup = require("./components/StackInputGroup");
 var _NavBar = require("./components/NavBar");
 var _Navigation = require("./components/Navigation");
+var _Notification = require("./components/Notification");
 var _ProgressBar = require("./components/ProgressBar");
 var _Sidebar = require("./components/Sidebar");
 var _Spinner = require("./components/Spinner");

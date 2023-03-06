@@ -17,6 +17,7 @@ var Table = function Table(props) {
     variant = props.variant,
     bsPrefix = props.bsPrefix,
     heights = props.heights;
+  console.log(props);
   return /*#__PURE__*/_react.default.createElement(_Table.default, {
     size: size,
     striped: striped,
