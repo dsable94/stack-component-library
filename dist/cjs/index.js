@@ -3,6 +3,12 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "Accordian", {
+  enumerable: true,
+  get: function get() {
+    return _Accordian.Accordian;
+  }
+});
 Object.defineProperty(exports, "Avatar", {
   enumerable: true,
   get: function get() {
@@ -66,3 +72,4 @@ var _Button = require("./components/Button");
 var _Avatar = require("./components/Avatar");
 var _Layout = require("./components/Layout");
 var _Switch = require("./components/Switch");
+var _Accordian = require("./components/Accordian");
