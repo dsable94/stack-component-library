@@ -1,0 +1,123 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Navigation from "./Navigation";
+import Menu from "../Menu/Menu";
+import NavigationTypes from "./Navigation.types";
+
+<Meta title="Components/Navigation" component="Navigation" />
+
+<Story name="Import" />
+
+# Navigation
+
+The navigation component hierarchy:
+
+```
+Navigation
+└─ Navigation.Section
+```
+
+## Import
+
+```jsx
+import {Navigation} from "@stack-ui/components";   
+```
+## Simple Navigation
+
+<Preview withToolbar>
+    <Story name="Simple">
+        <>
+        <Navigation size="sm" src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg">
+        <Navigation.Section
+          title="Dashboard & Apps"
+          items={[
+            {
+              label: 'Dashboard',
+              url: '/dashboard',
+              iconLeft: 'grid-view',
+              iconRight: 'chevron-right',
+            },
+            {
+              label: 'Apps',
+              url: '/apps',
+              iconLeft: 'layout-grid',
+              iconRight: 'chevron-right',
+              count: 0
+            },
+          ]}
+        />
+        <Navigation.Section
+          title="Component & UI"
+          items={[
+            {
+              label: 'UI Elements',
+              url: '/ui-elements',
+              iconLeft: 'clipboard',
+              iconRight: 'chevron-right',
+            },
+            {
+              label: 'Forms & Tables',
+              url: '/forms',
+              iconLeft: 'form',
+              iconRight: 'chevron-right',
+              count: 0
+            },
+            {
+              label: 'Charts',
+              url: '/charts',
+              iconLeft: 'chart',
+              iconRight: 'chevron-right',
+            },
+          ]}
+        />
+        <Navigation.Section
+          title="Collections"
+          items={[
+            {
+              label: 'Widgets',
+              url: '/widgets',
+              iconLeft: 'widget',
+              iconRight: 'chevron-right',
+            },
+            {
+              label: 'Ecommerce',
+              url: '/ecommerce',
+              iconLeft: 'shopping-cart',
+              iconRight: 'chevron-right',
+              count: 0
+            },
+            {
+              label: 'Pages',
+              url: '/pages',
+              iconLeft: 'person',
+              iconRight: 'chevron-right',
+            },
+          ]}
+        />
+        <Navigation.Section
+          title="Login & Error"
+          items={[
+            {
+              label: 'Authentication',
+              url: '/authentication',
+               iconLeft: 'lock',
+              iconRight: 'chevron-right',
+            },
+            {
+              label: 'Miscellaneous',
+              url: '/miscellaneous',
+              iconLeft: 'git-commit',
+              iconRight: 'chevron-right',
+              count: 0
+            },
+          ]}
+        />
+        </Navigation>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={NavigationTypes} />

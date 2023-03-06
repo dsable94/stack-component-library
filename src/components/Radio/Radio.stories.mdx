@@ -1,0 +1,47 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Radio from './Radio';
+import RadioTypes from './Radio.types';
+
+<Meta title="Components/Form Controls/Radio" component="Radio"   />
+
+<Story name="Import" />
+
+# Radio
+
+A radio button typically represents a single option where only one item can be selected at a time.
+Radio buttons should:
+
+- Always be used with an associated label component.
+- Be part of a list of radio buttons that:
+- Include at least two or more choices.
+- Are used to have users select only one option.
+
+
+## Import  
+
+```jsx
+import { Radio } from '@stack-ui/components';
+```
+
+
+## Radio 
+
+<Preview withToolbar>
+    <Story name="radio">
+        <>
+         <Radio name="radiogroup" value="Radio" label="Radio Option " />
+      <br />
+      <br />
+      <Radio name="radiogroup" value="Radio" label="Radio error option " isError />
+      <br />
+      <br />
+      <Radio name="radiogroup" value="Radio" disabled label="Radio disable option " />
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={RadioTypes} />

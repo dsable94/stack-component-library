@@ -1,0 +1,39 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Footer from "./Footer";
+import FooterTypes from "./Footer.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/Footer" component="Footer" />
+
+<Story name="Import" />
+
+# Footer
+
+## Import
+
+```jsx
+import {Footer} from "@stack-ui/components";
+```
+## Example
+
+<Preview withToolbar>
+    <Story name="Light">
+         <Footer mode="light" fixed={true} />
+    </Story>
+</Preview>
+
+## dark
+<Preview withToolbar>
+    <Story name="Dark">
+         <Footer mode="dark" fixed={true} />
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={FooterTypes} />
+
+

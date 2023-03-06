@@ -1,0 +1,50 @@
+import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
+import {Breadcrumb, StyledBreadcrumb} from "./Breadcrumb";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import BreadcrumbTypes from './Breadcrumb.types';
+
+
+
+<Meta title="Components/Breadcrumb" component="Breadcrumb" />
+
+# Breadcrumb
+
+<Story name="Import" />
+
+## Import
+
+```jsx
+    import {Breadcrumb,StyledBreadcrumb} from "@ui/components";
+```
+
+## Usage
+
+<Story name="Usages"/>
+
+### Default Breadcrumb
+<Preview withToolbar>
+<Story name="-Default">
+    <>
+   <Breadcrumb >
+        <StyledBreadcrumb.Item href="#">Home</StyledBreadcrumb.Item>
+        <StyledBreadcrumb.Item href="#">Library</StyledBreadcrumb.Item>
+        <StyledBreadcrumb.Item active>Data</StyledBreadcrumb.Item>
+   </Breadcrumb>
+   <br />
+    <Breadcrumb color="#382c2c" size="md" bgColor="#e4737a" color="#fff">
+        <StyledBreadcrumb.Item href="#">Home</StyledBreadcrumb.Item>
+        <StyledBreadcrumb.Item href="#">Library</StyledBreadcrumb.Item>
+        <StyledBreadcrumb.Item active>Data</StyledBreadcrumb.Item>
+   </Breadcrumb>
+</>
+</Story>
+</Preview>
+
+
+
+<Story name="Props" />
+
+## Props
+
+<Props of={BreadcrumbTypes} />

@@ -1,0 +1,156 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import StackChart from "./StackChart";
+import StackChartTypes from "./StackChart.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/StackChart" component="StackChart" />
+
+<Story name="Import" />
+
+# StackChart
+### Inherit from react-apexcharts <a href="https://www.npmjs.com/package/react-apexcharts">Url</a>
+
+## Import
+
+```jsx
+import {StackChart} from "@stack-ui/components";
+```
+## Bar and Line Chart
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+        <Row>
+        <Col xl="6">
+        <StackChart type="bar"  width={500} height={320}  options={
+                    {
+            chart: {
+            id: 'apexchart-example'
+            },
+            xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+            }
+      }
+        } 
+              series={
+                    [{
+                name: 'series-1',
+                data: [30, 40, 45, 50, 49, 60, 70, 91]
+            }]
+        } />
+        </Col>
+        <Col xl="6">
+        <StackChart type="line"  width={500} height={320} options= {
+                    {
+            chart: {
+            id: 'apexchart-example'
+            },
+            xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+            }
+      }
+        } 
+        series= {
+                    [{
+                name: 'series-1',
+                data: [30, 40, 45, 50, 49, 60, 70, 91]
+            }]
+        }
+        />
+        </Col>
+        </Row>
+        </>
+    </Story>
+</Preview>
+
+## Donut  and Radar Chart
+
+<Preview withToolbar>
+    <Story name="Donut-chart">
+        <>
+        <Row>
+        <Col xl="6">
+<StackChart type="donut"  width={500} height={320} options= {
+                    {
+            chart: {
+            id: 'apexchart-example'
+            },
+            xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+            }
+      }
+        } 
+        series= {[44, 55, 13, 33]}
+        />
+                </Col>
+        <Col xl="6">
+        <StackChart type="radar"  width={500} height={320}  options= {
+                    {
+            chart: {
+            id: 'apexchart-example'
+            },
+            xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+            }
+      }
+        } 
+        series= {[
+      {
+        name: "Radar Series 1",
+        data: [45, 52, 38, 24, 33, 10]
+      },
+      {
+        name: "Radar Series 2",
+        data: [26, 21, 20, 6, 8, 15]
+      }
+    ]
+        }
+        />
+        </Col>
+        </Row>
+        </>
+    </Story>
+</Preview>
+
+## Progress Chart
+
+<Preview withToolbar>
+    <Story name="Progress-chart">
+        <>
+        <Row>
+        <Col xl="6">
+<StackChart type="radialBar"  width={500} height={320} options= {
+                    {
+            chart: {
+            id: 'apexchart-example',
+            labels:'Progress'
+            }
+      }
+        } 
+        series= {[67]}
+        labels={["Progress"]}
+        />
+                </Col>
+        <Col xl="6">
+        <StackChart type="radialBar"  width={500} height={320} options= {
+                    {
+            chart: {
+            id: 'apexchart-example',
+            labels:'Progress'
+            }
+      }
+        } 
+        series= {[67]}
+        />
+        </Col>
+        </Row>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={StackChartTypes} />

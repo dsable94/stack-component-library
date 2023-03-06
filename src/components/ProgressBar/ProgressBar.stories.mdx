@@ -1,0 +1,88 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import ProgressBar from "./ProgressBar";
+import ProgressBarTypes from "./ProgressBar.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/ProgressBar" component="ProgressBar" />
+
+<Story name="Import" />
+
+# Progress Bar
+
+## Import
+
+```jsx
+import {ProgressBar} from "@stack-ui/components";
+```
+## Example with Label
+
+<Preview withToolbar>
+    <Story name="Usage">
+        <>
+         <ProgressBar variant="primary" size="xs" now={60} />
+        <p> </p>
+         <ProgressBar variant="info" size="sm" now={60} />
+        <p> </p>
+         <ProgressBar size="md" now={60} />
+        <p> </p>
+        <ProgressBar size="lg" now={60} label="60%"/>
+        <p> </p>
+         <ProgressBar now={50} label="50%" variant="danger" />
+        </>
+    </Story>
+</Preview>
+
+## Striped
+#Uses a gradient to create a striped effect. Not available in IE8.
+
+<Preview withToolbar>
+    <Story name="Striped">
+        <>
+        <ProgressBar striped variant="success" now={40} />
+        <p> </p>
+         <ProgressBar striped variant="info" now={20} />
+         <p> </p>
+         <ProgressBar striped variant="warning" now={60} />
+        </>
+    </Story>
+</Preview>
+
+## Animated
+#Add animated prop to animate the stripes right to left. Not available in IE9 and below
+
+<Preview withToolbar>
+    <Story name="Animation">
+        <>
+        <ProgressBar animated striped variant="success" now={40} />
+        <p> </p>
+         <ProgressBar animated striped variant="info" now={60} />
+         <p> </p>
+         <ProgressBar animated striped variant="danger" now={30} />
+         <p> </p>
+        </>
+    </Story>
+</Preview>
+
+## Stacked
+#We can represent Progress bar component with combination of different variants which we further called as Nesting of ProgressBar.
+
+<Preview withToolbar>
+    <Story name="Nest">
+        <>
+         <ProgressBar>
+            <ProgressBar striped variant="success" now={35} key={1} />
+            <ProgressBar striped variant="warning" now={20} key={2} />
+             <ProgressBar striped variant="danger" now={10} key={3} />
+         </ProgressBar>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ProgressBarTypes} />
+
+

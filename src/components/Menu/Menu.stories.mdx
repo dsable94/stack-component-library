@@ -1,0 +1,219 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Menu from "./Menu";
+import MenuTypes from "./Menu.types";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { Icon } from '../Icon';
+
+
+<Meta title="Components/Menu" component="Menu" />
+
+<Story name="Import" />
+
+# NavBar
+
+## Import
+
+```jsx
+import {Menu} from "@stack-ui/components";
+```
+## Variant
+
+The best part is you can do this with any button variant, too:
+<Preview withToolbar>
+    <Story name="Usage">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu value= "Menu" btnType="primary" icon="chevron-down" Iconsize="sm" iconVariant="solid" options={[{
+            item:'Add text',
+            icon: 'add',
+            handler: function (){
+                // This function will be use to handle click on the item.
+                console.log('Do your work here');  
+              },
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <Menu value="Menu item" btnType="secondary" icon="chevron-up" Iconsize="sm" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+          link :'/about',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+           link :'/home',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu value="report" btnType="success"  Iconsize="sm"  icon="chevron-down" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+            <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu value="dropbox" btnType="purple" icon="chevron-down" Iconsize="sm" iconVariant="solid" btnVariant="contained" options={[{
+          item:'HTML',
+           link :'/about',
+        },
+        {
+          item:'CSS',
+           link :'/about',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+           <span style={{marginRight:20, display: 'inline-block' }}>
+        <Menu value= "Menu" btnType="danger" icon="chevron-down" Iconsize="sm" iconVariant="solid" isDisabled="true" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+## Menu with Icon
+
+Button Menus work with buttons of all sizes, including default and split Menu buttons.
+
+<Preview withToolbar>
+    <Story name="UsageMenuIcons">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu btnType="primary"  value= "Menu" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+       <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu btnType="default"  value= "default" icon="chevron-down" options={[{
+            item:'Add text',
+            link :'/about',
+            icon: 'add',
+        },
+        {
+          item:'Delete text',
+           link :'/about',
+           icon: 'delete',
+        },
+        {
+          item:'Remove text',
+           link :'/about',
+           icon: 'trash',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+
+## Sizing
+
+<Preview withToolbar>
+    <Story name="UsageIcon">
+         <>
+          <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu btnType="primary" value= "Menu" icon="chevron-down"  iconVariant="solid"  size="sm" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+         <span style={{marginRight:20, display: 'inline-block'}}>
+        <Menu btnType="info" value= "Menu" icon="chevron-down" iconVariant="solid" style={{display: 'inline-block'}} options={[{
+          item:'HTML',
+        },
+        {
+          item:'React',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        <span style={{marginRight:20, display: 'inline-block' }} >
+        <Menu btnType="success" value= "Menu" icon="chevron-down" iconVariant="solid"  size="lg" btnVariant="contained" options={[{
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+        }]} />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+## Menu with Icons
+#Menu
+
+<Preview withToolbar>
+    <Story name="IconMenu">
+         <>
+          <span style={{marginRight:20, display: 'inline-block', marginLeft: 100 }} >
+          <Menu iconOption btnVariant="contained" btnType="menu" options={[
+            {
+          headerText: 'Header-Text',
+            },
+            {
+          item:'HTML',
+        },
+        {
+          item:'CSS',
+        },
+        {
+          item:'Javascript',
+          isDivider: true,
+        }]}
+        />
+        </span>
+        </>
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={MenuTypes} />

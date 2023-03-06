@@ -1,0 +1,162 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Chip from "./chip";
+import { faTimes, faSmile, faCheck, faTimesCircle } from '@fortawesome/fontawesome-free-solid';
+import ChipTypes from "./chip.types";
+
+
+
+<Meta title="Components/Chip" component="Chip" />
+
+<Story name="Import" />
+
+# Chip
+
+## Import
+
+```jsx
+import {Chip} from "@stack-ui/components";
+```
+## Usage
+
+<Preview withToolbar>
+    <Story name="ChipUsage">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="Basic"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Disable" disabled/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Clickable" avatar="M" />
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip  label="Deletable"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip   label="Custom delete icon" icon={faSmile}/>
+       </span> 
+       </div>
+       <div style={{display:"flex", marginTop:20}}>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Primary" icon={faCheck}/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Secoundary" color="primary" avatar="P"/>
+       </span>
+        <span style={{marginRight:20}}>
+       <Chip  label="Primary Clickable" color="secoundary" icon={faTimesCircle}/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Primary" color="secoundary"/>
+       </span>
+       </div>
+        </>
+    </Story>
+</Preview>
+
+## Outlined Chips
+
+
+<Preview withToolbar>
+    <Story name="OutlineChip">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="Basic" variant="outlined"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Disable" disabled="true" variant="outlined"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Clickable" avatar="M" variant="outlined"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip  label="Deletable" variant="outlined"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip   label="Custom delete icon" icon={faSmile} variant="outlined"/>
+       </span> 
+       </div>
+       <div style={{display:"flex", marginTop:20}}>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Primary" icon={faCheck} variant="outlined"/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Secoundary" color="primary"  variant="outlined"/>
+       </span>
+        <span style={{marginRight:20}}>
+       <Chip  label="Primary Clickable" color="secoundary" icon={faTimesCircle} variant="outlined"/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Primary" color="secoundary" variant="outlined"/>
+       </span>
+       </div>
+        </>
+    </Story>
+</Preview>
+
+## Small Chip
+
+<Preview withToolbar>
+    <Story name="SmallChip">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="Basic" size="small"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Disable" disabled="true" size="small"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip label="Clickable" avatar="M" size="small"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip  label="Deletable"  size="small"/>
+       </span> 
+        <span style={{marginRight:20}}>
+       <Chip   label="Custom delete icon" icon={faSmile} size="small"/>
+       </span> 
+       </div>
+       <div style={{display:"flex", marginTop:20}}>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Primary" icon={faCheck} size="small"/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Delete Secoundary" color="primary" size="small"/>
+       </span>
+        <span style={{marginRight:20}}>
+       <Chip  label="Primary Clickable" color="secoundary" icon={faTimesCircle} size="small"/>
+       </span>
+       <span style={{marginRight:20}}>
+       <Chip  label="Primary" color="secoundary"  size="small"/>
+       </span>
+       </div>
+        </>
+    </Story>
+</Preview>
+
+
+## Array Chip
+<Preview withToolbar>
+    <Story name="ChipArray">
+    <>
+    <div style={{display:"flex"}}>
+    <span style={{marginRight:20}}>
+       <Chip  label="arraychip" icon={faTimes}/>
+       </span> 
+       
+       
+       </div>
+        </>
+    </Story>
+</Preview>
+
+
+
+<Story name="Props" />
+
+## Props
+
+<Props of={ChipTypes} />

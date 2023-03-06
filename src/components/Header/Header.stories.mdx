@@ -1,0 +1,47 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Header from "./Header";
+import HeaderTypes from "./Header.types";
+import Image from "../Image/Image"
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+<Meta title="Components/Header" component="Header" />
+
+<Story name="Import" />
+
+# Header
+
+## Import
+
+```jsx
+import {Header} from "@stack-ui/components";
+```
+## Example
+
+<Preview withToolbar>
+    <Story name="Light">
+         <Header mode="light" />
+    </Story>
+</Preview>
+
+## dark
+<Preview withToolbar>
+    <Story name="Dark">
+         <Header mode="dark" fixed={true} />
+    </Story>
+</Preview>
+
+## logo
+<Preview withToolbar>
+    <Story name="logo">
+         <Header mode="light" logo={true} src="https://coderthemes.com/upvex/layouts/light/assets/images/users/user-1.jpg"/> 
+    </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={HeaderTypes} />
+
+
