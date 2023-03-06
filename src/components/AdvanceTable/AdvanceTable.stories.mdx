@@ -1,0 +1,39 @@
+import { Meta , Story, Props, Preview } from "@storybook/addon-docs/blocks";
+import Button from "../Button/Button";
+import AdvanceTable from "./AdvanceTable";
+import AdvanceTableTypes from "./AdvanceTable.types";
+import { data, columns, TransColumns, TransData } from "./constant";
+
+<Meta title="Components/AdvanceTable" component="AdvanceTable" />
+
+<Story name="Import" />
+
+# AdvanceTable
+
+## Import
+
+```jsx
+import {AdvanceTable} from "@stack-ui/components";
+```
+## Example with Label
+
+<Preview withToolbar>
+    <Story name="- Default" height="700px">
+    
+    <AdvanceTable title="Nutritions" columns={columns} data={data} selectableRows pagination />
+  </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="Custom Style" height="400px">
+    <AdvanceTable title="Transaction History" columns={TransColumns} data={TransData} fixedHeader striped/>
+  </Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={AdvanceTableTypes} />
+
+

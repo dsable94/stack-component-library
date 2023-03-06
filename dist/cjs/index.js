@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Accordian", {
     return _Accordian.Accordian;
   }
 });
+Object.defineProperty(exports, "AdvanceTable", {
+  enumerable: true,
+  get: function get() {
+    return _AdvanceTable.AdvanceTable;
+  }
+});
 Object.defineProperty(exports, "Avatar", {
   enumerable: true,
   get: function get() {
@@ -37,6 +43,12 @@ Object.defineProperty(exports, "Layout", {
   enumerable: true,
   get: function get() {
     return _Layout.Layout;
+  }
+});
+Object.defineProperty(exports, "Pagination", {
+  enumerable: true,
+  get: function get() {
+    return _Pagination.Pagination;
   }
 });
 Object.defineProperty(exports, "SearchBox", {
@@ -73,3 +85,5 @@ var _Avatar = require("./components/Avatar");
 var _Layout = require("./components/Layout");
 var _Switch = require("./components/Switch");
 var _Accordian = require("./components/Accordian");
+var _AdvanceTable = require("./components/AdvanceTable");
+var _Pagination = require("./components/Pagination");

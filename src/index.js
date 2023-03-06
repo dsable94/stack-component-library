@@ -9,3 +9,5 @@ export { Avatar } from './components/Avatar';
 export { Layout } from './components/Layout';
 export { Switch } from './components/Switch';
 export { Accordian } from './components/Accordian';
+export { AdvanceTable } from './components/AdvanceTable';
+export { Pagination } from './components/Pagination';
