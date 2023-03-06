@@ -1,0 +1,50 @@
+import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
+import Accordian from "./Accordian";
+import AccordianTypes from "./Accordian.types";
+import {Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+<Meta title="Components/Accordian" component="Accordian"  />
+
+# Tabs and Accordian
+
+<Story name="Import" />
+
+## Import
+
+```jsx
+    import {Accordian} from "@stack-ui/components";
+```
+
+## Usage
+
+<Story name="Usages"/>
+
+### Entire Header Clickable
+<Preview withToolbar>
+<Story name="-Default">
+    <>
+    <Accordian  label="Card Title" variant="link" as={Card.Header} content="the body content must goes here...." icon="chevron-down" />
+    <Accordian  label="Card Title" variant="link" as={Card.Header} content="the body2 content must goes here...." icon="chevron-down" />
+    <Accordian  label="Card Title" variant="link" as={Card.Header} content="the body3 content must goes here...." icon="chevron-down" />
+    <Accordian  label="Card Title" variant="link" as={Card.Header} content="the body44 content must goes here...." icon="chevron-down" />
+    </>
+</Story>
+</Preview>
+
+### Collapsed Link only
+<Preview withToolbar>
+<Story name="-LinkAccordion">
+    <>
+    <Accordian label="Button Title" as={Button} width="200px" variant="link" content="the body content must goes here...." />
+    </>
+</Story>
+</Preview>
+
+<Story name="Props" />
+
+## Props
+
+<Props of={AccordianTypes} />
