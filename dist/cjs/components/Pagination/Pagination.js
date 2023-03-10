@@ -9,7 +9,7 @@ var _Pagination = _interopRequireDefault(require("./Pagination.styled"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // import Pagination from 'react-bootstrap/Pagination';
 
-var StackPagination = function StackPagination(props) {
+var Pagination = function Pagination(props) {
   var children = props.children,
     bgColor = props.bgColor,
     paginationType = props.paginationType,
@@ -26,5 +26,5 @@ var StackPagination = function StackPagination(props) {
     disabled: disabled
   }, children);
 };
-var _default = StackPagination;
+var _default = Pagination;
 exports.default = _default;
