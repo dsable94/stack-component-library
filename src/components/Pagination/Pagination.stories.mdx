@@ -1,5 +1,5 @@
 import { Meta, Story, Preview, Props} from "@storybook/addon-docs/blocks";
-import Pagination from "./Pagination";
+import StackPagination from "./Pagination";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Pagination from 'react-bootstrap/Pagination';
@@ -27,7 +27,7 @@ import PaginationTypes from './Pagination.types'
 <Preview withToolbar>
 <Story name="-Default">
     <>
-    <Pagination>   
+    <StackPagination>   
         <Pagination.Prev/>
         <Pagination.Item>{1}</Pagination.Item>
         <Pagination.Item active>{2}</Pagination.Item>
@@ -36,7 +36,7 @@ import PaginationTypes from './Pagination.types'
         <Pagination.Item>{5}</Pagination.Item>
         <Pagination.Item >{6}</Pagination.Item>
         <Pagination.Next />
-    </Pagination>
+    </StackPagination>
     </>
 </Story>
 </Preview>
@@ -47,7 +47,7 @@ import PaginationTypes from './Pagination.types'
 <>
     <Row>
         <Col md="6">
-            <Pagination bgColor="primary" paginationType="rounded">   
+            <StackPagination bgColor="primary" paginationType="rounded">   
                 <Pagination.Prev/>
                 <Pagination.Item>{1}</Pagination.Item>
                 <Pagination.Item active>{2}</Pagination.Item>
@@ -56,10 +56,10 @@ import PaginationTypes from './Pagination.types'
                 <Pagination.Item>{5}</Pagination.Item>
                 <Pagination.Item >{6}</Pagination.Item>
                 <Pagination.Next />
-            </Pagination>
+            </StackPagination>
         </Col>
         <Col md="6">
-            <Pagination bgColor="info">   
+            <StackPagination bgColor="info">   
                 <Pagination.Prev/>
                 <Pagination.Item>{1}</Pagination.Item>
                 <Pagination.Item active>{2}</Pagination.Item>
@@ -68,11 +68,11 @@ import PaginationTypes from './Pagination.types'
                 <Pagination.Item>{5}</Pagination.Item>
                 <Pagination.Item >{6}</Pagination.Item>
                 <Pagination.Next />
-            </Pagination>
+            </StackPagination>
         </Col>
         
         <Col md="12">
-            <Pagination  size="lg">   
+            <StackPagination  size="lg">   
                 <Pagination.Prev/>
                 <Pagination.Item>{1}</Pagination.Item>
                 <Pagination.Item active>{2}</Pagination.Item>
@@ -81,10 +81,10 @@ import PaginationTypes from './Pagination.types'
                 <Pagination.Item>{5}</Pagination.Item>
                 <Pagination.Item >{6}</Pagination.Item>
                 <Pagination.Next />
-            </Pagination>
+            </StackPagination>
         </Col>
         <Col md="6">
-            <Pagination bgColor="secondary" size="sm">   
+            <StackPagination bgColor="secondary" size="sm">   
                 <Pagination.Prev/>
                 <Pagination.Item>{1}</Pagination.Item>
                 <Pagination.Item active>{2}</Pagination.Item>
@@ -93,7 +93,7 @@ import PaginationTypes from './Pagination.types'
                 <Pagination.Item>{5}</Pagination.Item>
                 <Pagination.Item >{6}</Pagination.Item>
                 <Pagination.Next />
-            </Pagination>
+            </StackPagination>
         </Col>
     </Row>
 </>

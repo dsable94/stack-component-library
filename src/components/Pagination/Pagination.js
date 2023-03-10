@@ -2,7 +2,7 @@ import React from "react";
 import StyledPagination from "./Pagination.styled";
 // import Pagination from 'react-bootstrap/Pagination';
 
-const Pagination = (props) =>{
+const StackPagination = (props) =>{
     const{ children, bgColor, paginationType, size, active, disabled, activeLabel} =props;
     
     return(
@@ -20,4 +20,4 @@ const Pagination = (props) =>{
     
 }
 
-export default Pagination;
+export default StackPagination;
